@@ -1,0 +1,426 @@
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+{
+
+.section_head
+{
+  font-size: 2.8125rem;
+  line-height: 3.2rem;
+}
+
+.main
+{
+  padding-top: 40px;
+}
+
+
+
+/*
+ * Заголовок
+ */
+
+.logo
+{
+  margin-top: 6px;
+}
+
+
+
+/*
+ * Верхний блок
+ */
+
+.top
+{
+  height: 660px;
+}
+
+.top_head
+{
+  margin-top: 165px;
+}
+
+
+
+/*
+ * Список с характеристиками
+ */
+
+.specifications
+{
+  background-position: 155% 50%;
+}
+
+
+
+/* 
+ * Манифест
+ */
+
+.maifest_list
+{
+  padding-bottom: 30px;
+}
+
+.maifest_item
+{
+  height: 365px;
+  margin-bottom: 0;
+}
+
+
+
+/* 
+ * FAQ
+ */
+
+.faq_header
+{
+  font-size: 1.375rem;
+  padding: 10px 0 10px 70px;
+}
+
+.faq_header:before
+{
+  line-height: 2.8rem;
+  width: 50px;
+}
+
+.faq_body
+{
+  padding: 10px 15px 10px 70px;
+}
+
+.faq_body:before
+{
+  content: " ";
+  text-align: center;
+  display: block;
+  position: absolute;
+  background-color: #dedaea;
+  color: #4c3498;
+  width: 50px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+
+/*
+ * Преимущества
+ */
+
+.excellence
+{
+  height: 735px;
+}
+
+.ex_item.__mob_right
+{
+  margin: 0;  
+}
+
+.ex_item.__mob_left
+{
+  margin: 0;  
+}
+
+.ex_list
+{
+  position: absolute;
+}
+
+.ex_list.__type_1
+{
+  left: 50%;
+  margin-left: -84px;
+  width: 165px;
+}
+
+.ex_list.__type_1 .ex_item:nth-child(1)
+{
+  margin-left: -130px;
+}
+
+.ex_list.__type_1 .ex_item:nth-child(2)
+{
+  margin-top: -147px;
+  margin-left: 130px;
+}
+
+.ex_list.__type_1 .ex_item:nth-child(3)
+{
+  margin-top: -75px;
+}
+
+.ex_list.__type_2
+{
+  left: 0;
+  top: 190px;
+  width: 166px;
+}
+
+.ex_list.__type_3
+{
+  right: 0;
+  top: 190px;
+  width: 166px;
+}
+
+.ex_description
+{
+  display: block;
+}
+
+
+
+/*
+ * Акция
+ */
+
+
+
+ /*
+ * Таймер 2
+ */
+
+.section_head .clock
+{
+  display: inline-block;
+  width: 320px;
+  vertical-align: top;
+}
+
+.promo .price_table
+{
+  margin-top: 40px;
+}
+
+
+
+/*
+ * Подарок
+ */ 
+ 
+.gift
+{
+  margin: 0 auto;
+  height: 265px;
+}
+
+
+
+/*
+ * Форма 2
+ */
+
+.promo_form_inner
+{
+  max-width: 1045px;
+}
+
+.promo_form .form_item
+{
+  margin-bottom: 0px;
+  width: 27%;
+  padding-right: 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.promo_form .btn_wrap
+{
+  width: 46%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+/*
+ * Отзывы
+ */
+
+.review
+{
+  height: 700px;
+}
+
+.rev_body
+{
+  padding: 30px;
+  margin-top: 100px;
+}
+
+.rev_photo
+{
+  float: left;
+  margin-right: 30px;
+}
+
+.slider 
+{
+  padding: 0px;
+  height: 450px;
+}
+
+
+.direction_nav .before:before
+{
+  top: 50%;
+  margin-top: -46px;
+}
+
+.direction_nav .next:before
+{
+  top: 50%;
+  margin-top: -46px;
+}
+
+
+
+/*
+ * Как мы работаем
+ */
+
+.work_caption
+{
+  font-size: 1.5rem;
+}
+
+
+
+/*
+ * Шесть причин
+ */
+
+.whywe
+{
+  min-height: 700px;
+}
+
+.whywe_list
+{
+  font-size: 0;
+}
+
+.whywe_item
+{
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.whywe_item:nth-child(5) 
+{
+  margin-bottom: 0;
+}
+
+
+.whywe_body
+{
+  font-size: 1rem;
+}
+
+
+
+/*
+ * Футер
+ */
+
+.section.footer
+{
+  padding: 60px 0 90px;
+}
+
+.faddress
+{
+  text-align: right;
+}
+
+.forder
+{
+  top: 95px;
+}
+
+.forder:before
+{
+  top: -210px;
+  left: 190px;
+}
+
+.forder:after
+{
+  content: "";
+  display: block;
+  width: 97px;
+  height: 117px;
+  background-repeat: no-repeat;
+  background-image: url(../img/arrow-footer.png);
+  background-position: center center;
+  position: absolute;
+  top: -130px;
+  left: 86px;
+}
+
+.fapp
+{
+  margin-top: 0px;
+  position: absolute;
+  left: 175px;
+  bottom: -80px;
+}
+
+.fapp:before
+{
+  content: "";
+  width: 143px;
+  height: 118px;
+  background: url(../img/ipone-half.png) no-repeat center top;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: -160px;
+}
+
+
+/*
+ * Модальное окно
+ */
+
+.modal
+{
+  width: 380px;
+}
+
+.modal_close
+{
+  top: 0px;
+  right: -25px;
+}
+
+.modal_inner
+{
+  padding: 15px 25px;
+}
+
+.modal.__video .modal_inner
+{
+  padding: 15px;
+}
+
+
+
+/*
+ * Поддельные уведомления
+ */
+
+.fake
+{
+  right: auto;
+  left: 15px;
+}
+
+
+} /* <-- Small devices */
