@@ -1,152 +1,21 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   
-/*
- * Заголовок
- */
+	html 
+  {
+    font-size: 100%;
+  }
 
-.menu a
-{
-  font-size: 1.125rem;
-  padding: 0 15px;
-}
+	
 
-.logo
-{
-  margin-top: 10px;
-}
-
-
-
-/*
- * Верхний блок
- */
-
-.top_head
-{
-	margin-top: 145px;
-	font-size: 2.45rem;
-}
-
-
-/*
- * Дескриптор
- */
-
-.top_desc_title
-{
-	font-size: 1.4375rem;
-}
-
-
-
-/*
- * Таймер 1
- */
-
-.countdown_wrap:after,
-.countdown_wrap:before
-{
-	width: 447px;
-	height: 273px;
-	left: -24px;
-	top: -16px;
-}
-
-
-.clock
-{
-	margin: 10px 0;
-}
-
-.clock_caption
-{
-	margin-top: 5px;
-}
-
-
-
-/*
- * Список с характеристиками
- */
-
-.spec_ico
-{
-	font-size: 1.5rem;
-}
-
-.spec_list.__left
-{
-	padding: 0 70px 0 0;
-}
-
-.specifications
-{
-  background-position: 47% 180px;
-}
-
-
-/* 
- * Манифест
- */
-.maifest_item
-{
-  height: 275px;
-}
-
-
-
-/*
- * Преимущества
- */
-
-.ex_list.__type_2 
-{
-	left: 100px;
-}
-
-.ex_list.__type_3
-{
-  right: 100px;
-}
-
-
-/*
- * Подарок
- */ 
- 
-.gift
-{
-	padding: 60px 0 0 250px;
-}
-
-
-
-/*
- * Отзывы
- */
-
-.direction_nav .before:before
-{
-  left: 30%;
-}
-
-.direction_nav .next:before
-{
-  right: 30%;
-}
-
-
-
-/*
- * Футер
- */
-
-.footer_container
-{
-  padding-bottom: 0px;
-}
-
+  /*
+   * Главное меню
+   */
+  
+  a.menu__link
+  {
+    padding: 0 1.85rem;
+  }
 
 
 }  /* <-- Large devices */

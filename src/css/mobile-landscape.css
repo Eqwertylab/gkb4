@@ -1,0 +1,14 @@
+/* Small devices (modile landscape, 480pxpx and up) */
+@media (min-width: 480px)
+{
+  
+  /*
+   * Галерея
+   */
+
+  .gallery__item
+  {
+    width: 50%;
+    float: left;
+  }
+}

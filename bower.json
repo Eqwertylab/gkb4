@@ -23,6 +23,8 @@
   "devDependencies": {
     "normalize.css": "~3.0.3",
     "bootstrap-grid-only": "https://github.com/zirafa/bootstrap-grid-only.git",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "swiper": "~3.1.2",
+    "fancybox": "~2.1.5"
   }
 }

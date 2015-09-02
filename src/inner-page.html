@@ -22,14 +22,13 @@
   <link rel="stylesheet" href="css/largescreen.css">
   <link rel="stylesheet" href="css/ranges.css">
   <!-- endbuild -->
-  
 </head>
 <body class="mlayout">
   <aside class="mlayout__side">
 
     <ul class="mmenu">
       <li class="mmenu__item"><a href="#" class="mmenu__link">Главная</a></li>
-      <li class="mmenu__item mmenu__item_active mmenu__item_open mmenu__item_container">
+      <li class="mmenu__item mmenu__item_active mmenu__item_container">
         <a href="" class="mmenu__link">О больнице</a>
         <ul class="mmenu__inner">
           <li class="mmenu__item"><a href="#" class="mmenu__link">О больнице</a></li>
@@ -120,99 +119,206 @@
       <main class="main">
         <div class="container">
           <div class="row">
-            <section class="col-sm-8 main__content">
-
-              <div class="box hidden-xs">
-                <!-- Slider main container -->
-                <div class="swiper-container swmain">
-                  
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide" style="background-image: url(img/sliders/slide1.jpg)">
-                      <div class="swmain__caption">Высокотехнологичное <br>оборудование</div>
-                    </div>
-                    <div class="swiper-slide" style="background-image: url(img/sliders/slide1.jpg)">
-                      <div class="swmain__caption">Оборудование <br>высокотехнологичное</div>
-                    </div>
-                    <div class="swiper-slide" style="background-image: url(img/sliders/slide1.jpg)">
-                      <div class="swmain__caption">Третий <br>слайд</div>
-                    </div>
-                  </div>
-                  
-                  
-                  <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-
-
-                  <!-- If we need pagination -->
-                  <div class="swiper-pagination"></div>
-
-                </div>
-              </div>
+            <section class="col-sm-8 col-md-9 main__content">
 
               <div class="box">
                 <div class="box__content">
+                  <ul class="bcrum">
+                    <li class="bcrum__item"><a href="">Главная</a></li>
+                    <span class="bcrum__delim"></span>
+                    <li class="bcrum__item"><a href="">О больнице</a></li>
+                    <span class="bcrum__delim"></span>
+                    <li class="bcrum__item"><span>Общие сведения</span></li>
+                  </ul>
+                  <h1>Общие сведения</h1>
+                  <img src="img/image-about.jpg" alt="" class="img-responsive">
                   <p>В государственном бюджетном учреждении здравоохранения «Городская клиническая больница № 4» города Оренбурга, возглавляемым Пупыниным Дмитрием Юрьевичем сосредоточена вся взрослая городская травматологическая служба, где пациенты получают стационарное и амбулаторное лечение изолированных, множественных и сочетанных повреждений костно-мышечного аппарата, в т.ч., позвоночника, таза, лечение осложнений в посттравматическом периоде, ортопедической патологии, ожогов, отморожений.</p>
                   
                   <p>В учреждении внедрены артроскопическая хирургия суставов, остеосинтез внутрисуставных переломов под артроскопическим контролем, остеосинтез длинных трубчатых костей стержнями с блокированием без рассверливания каналов, эндопротезирование тазобедренного и коленного суставов. Успешно реализуются новые методики лечения раневой инфекции, травм кисти, повреждений сухожилий, обширных дефектов кожи после нагноения ран, деформаций, дефектов и несращений переломов костей конечностей на фоне остеомиелита. Применяется материал«ЛитАр» для возмещения дефектов в опорных тканях. Осуществляется комплексное лечение больных с ожогами свыше 30 % поверхности тела, проводятся восстановительные пластические операции при послеожоговой рубцовой деформации лица и шеи. С обнадеживающими результатами интенсивно развивается хирургия позвоночно-спинальной травмы.</p>
-                  <div class="box__tool"><a href="" class="btn btn_arrow">Подробнее о больнице</a></div>
+
+                  <h2>Таблица</h2>
+
+                  <div class="table">
+                    <table class="table__item">
+                      <tr class="table__tr">
+                        <th class="table__th">Заголовок1</th>
+                        <th class="table__th">Заголовок2</th>
+                        <th class="table__th">Заголовок3</th>
+                      </tr>
+                      <tr class="table__tr">
+                        <td class="table__td">Строка 1</td>
+                        <td class="table__td">Строка 1</td>
+                        <td class="table__td">Строка 1</td>
+                      </tr>
+                      <tr class="table__tr">
+                        <td class="table__td">lorem</td>
+                        <td class="table__td">Insuprum</td>
+                        <td class="table__td">dolor</td>
+                      </tr>
+                    </table>
+                  </div>
+
+                  <h2>Галерея фото</h2>
+                  
+                  <div class="album">
+                    <a href="#" class="album__link">Профилактика гриппа / 5 фото</a>
+                    <ul class="gallery">
+                      <li class="gallery__item">
+                        <a href="img/image-about.jpg" class="gallery__link fancybox" rel="group">
+                          <img src="http://placehold.it/200x143" alt="" class="gallery__preview">
+                        </a>
+                      </li>
+                      <li class="gallery__item">
+                        <a href="img/backgroung-top.jpg" class="gallery__link fancybox" rel="group">
+                          <img src="http://placehold.it/200x143" alt="" class="gallery__preview">
+                        </a>
+                      </li>
+                      <li class="gallery__item">
+                        <a href="img/image-about.jpg" class="gallery__link fancybox" rel="group">
+                          <img src="http://placehold.it/200x143" alt="" class="gallery__preview">
+                        </a>
+                      </li>
+                      <li class="gallery__item">
+                        <a href="img/backgroung-top-mobile.jpg" class="gallery__link fancybox" rel="group">
+                          <img src="http://placehold.it/200x143" alt="" class="gallery__preview">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="album">
+                    <a href="#" class="album__link">Профилактика гриппа / 5 фото</a>
+                    <ul class="gallery">
+                      <li class="gallery__item">
+                        <a href="img/image-about.jpg" class="gallery__link fancybox" rel="group1">
+                          <img src="http://placehold.it/200x143" alt="" class="gallery__preview">
+                        </a>
+                      </li>
+                      <li class="gallery__item">
+                        <a href="img/backgroung-top.jpg" class="gallery__link fancybox" rel="group1">
+                          <img src="http://placehold.it/200x143" alt="" class="gallery__preview">
+                        </a>
+                      </li>
+                      <li class="gallery__item">
+                        <a href="img/image-about.jpg" class="gallery__link fancybox" rel="group1">
+                          <img src="http://placehold.it/200x143" alt="" class="gallery__preview">
+                        </a>
+                      </li>
+                      <li class="gallery__item">
+                        <a href="img/backgroung-top-mobile.jpg" class="gallery__link fancybox" rel="group1">
+                          <img src="http://placehold.it/200x143" alt="" class="gallery__preview">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <h2>Структура организации</h2>
+
+                  <ul class="struct">
+                    <li class="struct__item  struct__item_level_1">
+                      <div class="struct__capt">
+                        <span class="struct__title">Главный врач</span>
+                      </div>
+
+                      <ul class="struct">
+                        <li class="struct__item struct__item_level_2">
+                          <div class="struct__capt">
+                            <span class="struct__title">Бухгалтерия</span>
+                          </div>
+                        </li>
+                        <li class="struct__item  struct__item_level_2">
+                          <div class="struct__capt">
+                            <span class="struct__title">Заместитель главного врача по медицинской части</span> 
+                          </div>
+
+                          <ul class="struct">
+                            <li class="struct__item struct__item_level_3">
+                              <div class="struct__capt">
+                                <span class="struct__title">Кабинеты специалистов</span>
+                              </div>
+                            </li>
+                            <li class="struct__item  struct__item_level_3">
+                              <div class="struct__capt">
+                                <span class="struct__title">Отделение реабилитации и восстановительного лечения</span>
+                              </div>
+
+                              <ul class="struct">
+                                <li class="struct__item struct__item_level_4">
+                                  <div class="struct__capt">
+                                    <span class="struct__title">Кабинеты специалистов</span>
+                                  </div>
+
+                                  <ul class="struct">
+                                    <li class="struct__item struct__item_level_5">
+                                      <div class="struct__capt">
+                                        <span class="struct__title">Кабинеты специалистов</span>
+                                      </div>
+                                    </li>
+                                    <li class="struct__item struct__item_level_5">
+                                      <div class="struct__capt">
+                                        <span class="struct__title">Отделение реабилитации и восстановительного лечения</span>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="struct__item struct__item_level_4">
+                                  <div class="struct__capt">
+                                    <span class="struct__title">Отделение реабилитации и восстановительного лечения</span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="struct__item struct__item_level_3">
+                              <div class="struct__capt">
+                                <span class="struct__title">Кабинеты специалистов</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="struct__item  struct__item_level_2">
+                          <div class="struct__capt">
+                            <span class="struct__title">Регистратура</span>
+                          </div>
+
+                          <ul class="struct">
+                            <li class="struct__item struct__item_level_3">
+                              <div class="struct__capt">
+                                <span class="struct__title">Кабинеты специалистов</span>
+                              </div>
+                            </li>
+                            <li class="struct__item  struct__item_level_3">
+                              <div class="struct__capt">
+                                <span class="struct__title">Отделение реабилитации и восстановительного лечения</span>
+                              </div>
+
+                              <ul class="struct">
+                                <li class="struct__item struct__item_level_4">
+                                  <div class="struct__capt">
+                                    <span class="struct__title">Кабинеты специалистов</span>
+                                  </div>
+                                </li>
+                                <li class="struct__item struct__item_level_4">
+                                  <div class="struct__capt">
+                                    <span class="struct__title">Отделение реабилитации и восстановительного лечения</span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
                 </div>
               </div>
-
-              <div class="box">
-                <ul class="panel">
-                  <li class="panel__item panel__item_color_red">
-                    <a href="#" class="panel__inner">
-                      <span class="panel__logo" style="background-image: url(img/ico-panel-rules.png)"></span>
-                      <span class="panel__text">Порядок плановой госпитализации</span>
-                    </a>
-                  </li>
-                  <li class="panel__item">
-                    <a href="#" class="panel__inner">
-                      <span class="panel__logo" style="background-image: url(img/ico-panel-whrite.png)"></span>
-                      <span class="panel__text">Запись на прием</span>
-                    </a>
-                  </li>
-
-                  <li class="panel__item">
-                    <a href="#" class="panel__inner">
-                      <span class="panel__logo" style="background-image: url(img/ico-panel-doc.png)"></span>
-                      <span class="panel__text">Написать главному врачу больницы</span>
-                    </a>
-                  </li>
-
-                  <li class="panel__item">
-                    <a href="#" class="panel__inner">
-                      <span class="panel__logo" style="background-image: url(img/ico-panel-money.png)"></span>
-                      <span class="panel__text">Правила оказания платных услуг</span>
-                    </a>
-                  </li>
-
-                  <li class="panel__item">
-                    <a href="#" class="panel__inner">
-                      <span class="panel__logo" style="background-image: url(img/ico-panel-calendar.png)"></span>
-                      <span class="panel__text">График консультаций специалистов</span>
-                    </a>
-                  </li>
-
-                  <li class="panel__item">
-                    <a href="#" class="panel__inner">
-                      <span class="panel__logo" style="background-image: url(img/ico-panel-vacancy.png)"></span>
-                      <span class="panel__text">Вакансии</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
             </section>
-            <aside class="col-sm-4 main__sidebar">
+
+            <aside class="col-sm-4 col-md-3 main__sidebar">
 
               <div class="box">
-                <div class="box__header">Наши направления</div>
                 <div class="box__content">
-                  <ul class="list list_type_arrow">
+                  <ul class="list list_type_birdie">
                     <li class="list__item"><a href="" class="list__link">Гинекология и акушерство</a></li>
                     <li class="list__item"><a href="" class="list__link">Урология</a></li>
                     <li class="list__item"><a href="" class="list__link">Гастроэнтерология</a></li>
@@ -220,46 +326,6 @@
                     <li class="list__item"><a href="" class="list__link">Гастроэнтерология</a></li>
                     <li class="list__item"><a href="" class="list__link">Кардиология</a></li>
                   </ul>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="box__header">Наши услуги</div>
-                <div class="box__content">
-                  <ul class="list list_type_check">
-                    <li class="list__item"><a href="" class="list__link">Гинекология и акушерство</a></li>
-                    <li class="list__item"><a href="" class="list__link">Урология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Гастроэнтерология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Кардиология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Гастроэнтерология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Кардиология</a></li>
-                  </ul>
-                  <div class="box__tool"><a href="" class="btn btn_arrow">Все услуги</a></div>
-                </div>
-              </div>
-
-              <div class="box">
-                <div class="box__header">Новости больницы</div>
-                <div class="box__content">
-                  <ul class="list list_type_news">
-                    <li class="list__item">
-                      <span class="list__date">1 марта 2015</span>
-                      <a href="" class="list__link">На Южном Урале появятся клиника и завод по производству фильтров для гемодиализа</a>
-                    </li>
-                    <li class="list__item">
-                      <span class="list__date">28 февраля 2015</span>
-                      <a href="" class="list__link">С первого мая препараты с содержанием кодеина можно будет купить только по рецепту</a>
-                    </li>
-                    <li class="list__item">
-                      <span class="list__date">28 февраля 2015</span>
-                      <a href="" class="list__link">С первого мая препараты с содержанием кодеина можно будет купить только по рецепту</a>
-                    </li>
-                    <li class="list__item">
-                      <span class="list__date">28 февраля 2015</span>
-                      <a href="" class="list__link">С первого мая препараты с содержанием кодеина можно будет купить только по рецепту</a>
-                    </li>
-                  </ul>
-                  <div class="box__tool"><a href="" class="btn btn_arrow">Все новости</a></div>
                 </div>
               </div>
             </aside>
