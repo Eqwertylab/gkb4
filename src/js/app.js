@@ -20,11 +20,21 @@ App = {
 
       // Всплывающие окна
       App.Fn.upwindow();  
+
+      // Календарь
+      App.Fn.calendar();  
     });
   },
 
 
   Fn: {
+
+    calendar: function() {
+      $( "#datepicker" ).datepicker({
+        minDate: new Date(),
+        altField: "#date",
+      });
+    },
 
     upwindow: function() {
       

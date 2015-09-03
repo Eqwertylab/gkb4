@@ -1163,36 +1163,95 @@ a.menu__link
 
 
 /*
+ * Календарь
+ */
+
+.ui-widget {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+}
+.ui-widget .ui-widget {
+  font-size: 1rem;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+
+
+/*
  * Элементы формы
  */
 
-select.base_control,
-input.base_control,
-textarea.base_control
+select.form__control,
+input.form__control,
+textarea.form__control
 {
   width: 100%;
 
   color: #6a8294;
-  border: 1px solid #ebebeb;
+  border: 1px solid #cbcbcb;
   outline: none;
   font-size: 1rem;
+  display: block;
 }
 
-select.base_control,
-input.base_control
+select.form__control,
+input.form__control
 {
-  line-height: 38px;
+  line-height: 2.375rem;
 
-  height: 45px;
-  padding: 0 15px;
+  height: 2.8125rem;
+  padding: 0 0.9375rem;
 }
 
-input.error
+textarea.form__control
+{
+  resize: none;
+  height: 100px;
+  padding: 0.9375rem;
+}
+
+input.form__control_error
 {
   border-color: #ff0000 !important;
   background: #fff2f2;
 }
 
+.form_gorizontal .form__error,
+.form_gorizontal .form__label
+{
+  line-height: 2rem;
+  display: block;
+  white-space: nowrap;
+}
+
+.form_gorizontal .form__error
+{
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.form__error
+{
+  color: #ff0000;
+}
+
+.form__row
+{
+  margin-bottom: 1rem;
+}
+
+
+
+
+/*
+ * Кнопки
+ */
 .btn,
 a.btn
 {

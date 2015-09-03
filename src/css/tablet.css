@@ -101,4 +101,21 @@
     padding-left: 0.625rem;
   }
 
+
+
+  /*
+   * Элементы формы
+   */
+
+  .form_gorizontal .form__label
+  {
+    text-align: right;
+  }
+
+  .form_gorizontal .form__error,
+  .form_gorizontal .form__label
+  {
+    line-height: 2.8125rem;
+  }
+
 } /* <-- Small devices */

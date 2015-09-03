@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../bower_components/bootstrap-grid-only/css/grid12.css">
   <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.css">
   <link rel="stylesheet" href="../bower_components/fancybox/source/jquery.fancybox.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css">
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/mobile-landscape.css">
   <link rel="stylesheet" href="css/tablet.css">
@@ -310,6 +311,88 @@
                     </li>
                   </ul>
                   
+                  <h2>Запись на прием</h2>
+                  
+                  <form action="" class="form form_gorizontal">
+
+                    <div class="form__row row">
+                      <div class="col-sm-4 col-md-3">
+                        <label for="name" class="form__label">Ваши ФИО</label>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                        <div class="row">
+                          <div class="col-md-7">
+                            <input type="text" class="form__control form__control_error" placeholder="Представьтесь пожалуйста">
+                          </div>
+                          <div class="col-md-5">
+                            <div class="form__error">
+                              Текст ошибки очень длинный текст
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form__row row">
+                      <div class="col-sm-4 col-md-3">
+                        <label for="desc" class="form__label">Доп. информация</label>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                        <div class="row">
+                          <div class="col-md-7">
+                            <textarea name="desc" id="" cols="30" rows="10" class="form__control" placeholder="Укажите дополнительную информацию"></textarea>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="form__error"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form__row row">
+                      <div class="col-sm-4 col-md-3">
+                        <label for="desc" class="form__label">Желаемое время</label>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                        <div class="row">
+                          <div class="col-md-7">
+                            <select name="time" id="" class="form__control">
+                              <option value="">Утро</option>
+                              <option value="">День</option>
+                              <option value="">Вечер</option>
+                            </select>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="form__error"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form__row row">
+                      <div class="col-sm-4 col-md-3">
+                        <label for="desc" class="form__label">Дата</label>
+                      </div>
+                      <div class="col-sm-8 col-md-9">
+                        <div class="row">
+                          <div class="col-md-7">
+                            <input type="hidden" class="date" id="date" name="date">
+                            <div id="datepicker"></div>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="form__error"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form__row row">
+                      <div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3">
+                        <button class="btn" type="submit">Отправить</button>
+                      </div>
+                    </div>
+                  </form>
+
                 </div>
               </div>
             </section>
@@ -346,6 +429,8 @@
   <script src="../bower_components/jquery/dist/jquery.js"></script>
   <script src="../bower_components/swiper/dist/js/swiper.jquery.js"></script>
   <script src="../bower_components/fancybox/source/jquery.fancybox.js"></script>
+  <script src="js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+  <script src="js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
   <script src="js/app.js"></script>
   <!-- endbuild -->
 </body>
