@@ -557,6 +557,14 @@ a.menu__link
   background: #ffffff;
 }
 
+.box_style_attention
+{
+  border-color: #ff0000;
+  background-color: #feefef;
+  font-weight: 600;
+  border-width: 3px;
+}
+
 .box__header
 {
   padding: 1.25rem;
@@ -685,6 +693,7 @@ a.menu__link
  * Списки
  */
 
+.list_type_num,
 .list_type_birdie,
 .list_type_arrow,
 .list_type_check,
@@ -751,6 +760,38 @@ a.menu__link
   font-size: 0.75rem;
   line-height: 1.1rem;
   display: block;
+}
+
+.list_type_num
+{
+  counter-reset: item;
+}
+
+.list_type_num > .list__item:before
+{
+  content: counter(item); 
+  counter-increment: item;
+  display: block;
+  width: 4.375rem;
+  height: 4.375rem;
+  border: 3px solid #007cdc;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #007cdc;
+}
+
+.list_type_num > .list__item
+{
+  margin-bottom: 3rem;
+  padding-left: 5rem;
+  position: relative;
+  min-height: 4.375rem;
 }
 
 
