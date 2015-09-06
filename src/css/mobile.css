@@ -52,13 +52,6 @@ h2,h1
   font-weight: 300;
 }
 
-.img-responsive
-{
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 1rem;
-}
-
 .open .mlayout
 {
   overflow-y: hidden;
@@ -93,6 +86,23 @@ h2,h1
   left: 230px;
 
   overflow-y: hidden;
+}
+
+
+
+/*
+ * Адаптивне изображения
+ */
+
+.img-responsive
+{
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.img-responsive_wide
+{
+  width: 100%;
 }
 
 
@@ -557,6 +567,12 @@ a.menu__link
   background: #ffffff;
 }
 
+.box__row
+{
+  margin: 0 -1.25rem;
+  padding: 0 1.25rem;
+}
+
 .box_style_attention
 {
   border-color: #ff0000;
@@ -586,6 +602,161 @@ a.menu__link
 .box__tool
 {
   margin-top: 1rem;
+}
+
+
+
+/*
+ * Постраничная навигация
+ */
+
+.paginat
+{
+  margin: 2rem 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.paginat__item
+{
+  float: left;
+  margin-right: 8px;
+}
+
+.paginat__item a,
+.paginat__item span 
+{
+  line-height: 2rem;
+
+  display: block;
+
+  width: 2.125rem;
+  height: 2.125rem;
+
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 100%;
+
+  box-shadow: -2px 2px 3px rgba(0,0,0,0.25);
+}
+
+.paginat__item span 
+{
+  color: #ffffff;
+  background: #BBBBBB;
+}
+
+.paginat__item a
+{
+  color: #ffffff;
+  background: #007cdc;
+}
+
+.paginat__item a:hover
+{
+  background: #006cc0;
+}
+
+.paginat__item_active a:hover,
+.paginat__item_active a,
+.paginat__item_active span
+{
+  color: #ffffff;
+  background: #BBBBBB;
+}
+
+.paginat,
+.paginat:before,
+.paginat:after
+{
+  content: " ";
+  display: table;
+}
+
+.paginat:after
+{
+  clear: both;
+}
+
+
+
+/*
+ * Руководство
+ */
+
+.leader + .leader
+{
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #d4dee6;
+}
+
+.leader__name
+{
+  font-size: 1.25rem;
+}
+
+.leader__info
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.leader__info-item
+{
+  margin-bottom: 0.625rem;
+}
+
+
+
+/*
+ * Новости
+ */
+
+.news
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news__item + .news__item
+{
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #d4dee6;
+}
+
+.news__title
+{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.news__date
+{
+  color: #8a8a8a;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.news__footer
+{
+  margin-top: 0.5rem;
+}
+
+.news__content,
+.news__content:before,
+.news__content:after
+{
+  content: " ";
+  display: table;
+}
+.news__content:after
+{
+  clear: both;
 }
 
 
@@ -689,10 +860,11 @@ a.menu__link
 
 
 
- /*
+/*
  * Списки
  */
 
+.list_type_download,
 .list_type_num,
 .list_type_birdie,
 .list_type_arrow,
@@ -704,12 +876,29 @@ a.menu__link
   list-style-type: none;
 }
 
+.list_type_download > .list__item:last-child,
+.list_type_num > .list__item:last-child,
 .list_type_birdie > .list__item:last-child,
 .list_type_arrow > .list__item:last-child,
 .list_type_check > .list__item:last-child,
 .list_type_news > .list__item:last-child
 {
   margin-bottom: 0;
+}
+
+.list_type_download > .list__item
+{
+  margin-bottom: 0.625rem;
+}
+
+.list_type_download > .list__item > .list__link
+{
+  display: inline-block;
+  padding-left: 1.6875rem;
+  background-repeat: no-repeat;
+  background-position: left 2px;
+  background-size: 1.0625rem;
+  background-image: url(../img/list-download.png);
 }
 
 .list_type_check > .list__item
@@ -792,6 +981,134 @@ a.menu__link
   padding-left: 5rem;
   position: relative;
   min-height: 4.375rem;
+}
+
+
+
+/*
+ * Лицензия
+ */
+
+a.license
+{
+  display: block;
+  border: 2rem solid #ede1c7;
+  border-bottom: 1rem solid #ede1c7;
+  background-color: #ede1c7;
+  max-width: 400px;
+  margin: auto;
+  color: #000;
+  text-decoration: none;
+}
+
+a.license:hover 
+{
+  color: #000;
+}
+
+.license__title
+{
+  display: block;
+  text-align: center;
+  display: block;
+  border: 0.3125rem solid;
+  border-top-color: #c6c6c6;
+  border-right-color: #bdbdbd;
+  border-left-color: #bababa;
+  border-bottom-color: #a2a2a2;
+  background: #e5e5e5;
+  padding: 0.625rem;
+  width: 90%;
+  margin: 1rem auto 0;
+  font-size: 0.8125rem;
+  position: relative;
+  box-shadow: -1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.license__image
+{
+  width: 100%;
+}
+
+.license__image-shadow
+{
+  display: block;
+  font-size: 0;
+  position: relative;
+  z-index: 80;
+  border: 0.75rem solid;
+  border-top-color: #c5b591;
+  border-right-color: #ccbc9a;
+  border-left-color: #d6c7a7;
+  border-bottom-color: #dfd2b5;
+  overflow: hidden;
+}
+
+.license__image-shadow:after
+{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: inset -1px 2px 8px rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.license__image-shadow:before
+{
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  transition: background 0.3s ease-in;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 0 0;
+  background-image: url(../img/zoom.png);
+}
+
+.license:hover .license__image-shadow:before
+{
+  background-color: rgba(0,124,220,0.2);
+  background-size: 6.8125rem 6.8125rem;
+}
+
+
+
+
+/*
+ * Документы
+ */
+
+.docs
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.docs__item + .docs__item
+{
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #d4dee6;
+}
+
+.docs__title
+{
+  font-size: 1.125rem;
+}
+
+.docs__tool
+{
+  margin-top: 0.625rem;
 }
 
 

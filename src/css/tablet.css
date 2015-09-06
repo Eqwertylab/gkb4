@@ -118,4 +118,14 @@
     line-height: 2.8125rem;
   }
 
+
+
+  /*
+   * Лицензия
+   */
+  a.license
+  {
+    width: 80%;
+  }
+
 } /* <-- Small devices */

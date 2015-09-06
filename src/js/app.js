@@ -38,7 +38,13 @@ App = {
 
     upwindow: function() {
       
-      $(".fancybox").fancybox();
+      $(".fancybox").fancybox({
+        closeBtn    : false,
+        helpers   : {
+          title : { type : 'inside' },
+          buttons : {}
+        }
+      });
     },
 
     slider: function(){
