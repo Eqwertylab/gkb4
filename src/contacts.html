@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../bower_components/bootstrap-grid-only/css/grid12.css">
   <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.css">
   <link rel="stylesheet" href="../bower_components/fancybox/source/jquery.fancybox.css">
+  <link rel="stylesheet" href="../bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css">
   <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css">
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/mobile-landscape.css">
@@ -120,7 +121,7 @@
       <main class="main">
         <div class="container">
           <div class="row">
-            <section class="col-sm-8 col-md-9 main__content">
+            <section class="col-sm-12 main__content">
 
               <div class="box">
                 <div class="box__content">
@@ -131,65 +132,123 @@
                     <li class="bcrum__item"><span>Общие сведения</span></li>
                   </ul>
 
-                  <h1>Нормативная документация</h1>
+                  <h1>Контакты</h1>
                   
-                  <ul class="docs">
-                    <li class="docs__item box__row">
-                      <div class="docs__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus est rerum sed aliquid inventore voluptate eveniet soluta nostrum distinctio cupiditate adipisci sint porro illum impedit rem harum voluptatibus assumenda natus.</div>
-                      <div class="docs__tool">
-                        <ul class="list list_type_download">
-                          <li class="list__item">
-                            <a href="#" class="list__link">Скачать</a>
-                          </li>
-                          <li class="list__item">
-                            <a href="#" class="list__link">Скачать</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
+                  <div class="contab">
 
-                    <li class="docs__item box__row">
-                      <div class="docs__title">1-го сентября отмечался День города</div>
-                      <div class="docs__tool">
-                        <ul class="list list_type_download">
-                          <li class="list__item">
-                            <a href="#" class="list__link">Скачать</a>
-                          </li>
-                          <li class="list__item">
-                            <a href="#" class="list__link">Скачать</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
+                    <ul class="contab__head">
+                      <li class="contab__title">
+                        <a href="#one" class="contab__link contab__link_active" data-map="51.7720,55.1029">Стационар,<br>Травматологический пункт № 1</a>
+                      </li>
+                      <li class="contab__title">
+                        <a href="#two" class="contab__link" data-map="51.7732,55.1709">Травматологический пункт № 2</a>
+                      </li>
+                      <li class="contab__title">
+                        <a href="#three" class="contab__link" data-map="51.8051,55.0937">Травматологический пункт № 3</a>
+                      </li>
+                    </ul>
+                    
+                    <div class="row contab__body">
 
-                  <ul class="paginat">
-                    <li class="paginat__item"><span>&#171;</span></li>
-                    <li class="paginat__item paginat__item_active"><a href="#">1</a></li>
-                    <li class="paginat__item"><a href="#">2</a></li>
-                    <li class="paginat__item"><a href="#">3</a></li>
-                    <li class="paginat__item"><a href="#">&#187;</a></li>
-                  </ul>
+                      <ul class="contab__desc col-sm-5">
+
+                        <li class="contab__item">
+                          <p>Травматологический пункт № 1, стационар, администрация, восстановительный центр.</p>
+                          <div class="contab__address">г. Оренбург проспект Победы, 1</div>
+                          <div class="contab__bus">
+                            <div class="contab__bus-item">
+                              <p>
+                                <i>Ост. “4-я городская больница”, Ост. «Театр «Музыкальной комедии»:</i>
+                              </p>
+                              <p>
+                                1) Aвтобусы 21, 61, 51, 65, 44, 41, 49. <br>
+                                2) Маршрутная «Газель» № 57.
+                              </p>
+                            </div>
+
+                            <div class="contab__bus-item">
+                              <p>
+                                <i>Ост. Центральный рынок, Ост. «Театр «Музыкальной комедии»:</i>
+                              </p>
+                              <p>
+                                1) Автобусы 45, 52, 26, 40, 39. <br>
+                                2) Троллейбусы 12, 4. <br>
+                                3) Маршрутная «Газель» № 62.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="contab__phone">
+                            Стол справок: 31-39-34 <br>
+                            Регистратура: 52-17-04 <br>
+                            Кабинет первичного приема: 52-17-13 <br>
+                            Кабинет медицинской статистики: 77-58-05 <br>
+                            Отдел АСУ: 77-30-86 <br>
+                            Отдел кадров: 77-84-27 <br>
+                            ПЭО: 77-52-13 <br>
+                            Бухгалтерия: 77-04-19<br>
+                            Зам. главного врача по мед. части Давыдов Денис Михайлович: 31-44-00<br>
+                            Зам. главного врача по ЭВН Барбашин Дмитрий Алексеевич: 31-39-55<br>
+                            Зам. главного врача по ОМР Попов Андрей Валерьевич: 77-55-08<br>
+                            Зав. приемным отделением Макаров Денис Иванович: 77-09-32<br>
+                            Зав. 1 травматологическим отделением Трвкин Сергей Николаевич: 31-42-33<br>
+                            Зав. 2 травматологическим отделением Лисков Владимир Андреевич: 31-39-77<br>
+                            Зав. 3 травматологическим отделением Аськов Сергей Петрович: 31-39-78<br>
+                            Зав. ожоговым отделением Голиков Борис Валерьевич: 77-20-31<br>
+                            Зав. ортопедическим отделением Сафронов Андрей Александрович: 31-42-44<br>
+                            Зав. отделением анестезиологии и реанимации Егоров Олег Анатольевич: 31-38-12<br>
+                            Зав. рентгеновским отделением Лаврентьев Владимир Иванович: 31-39-56<br>
+                            Зав. аптекой Волохова Татьяна Павловна: 77-71-73<br>
+                            Главная медицинская сестра Атапина Ирина Геннадьевна: 31-42-55<br>
+                            Зав. травматологическим пунктом № 1 Попович Алексей Михайлович: 77-38-61<br>
+                            Регистратура: 77-35-52<br>
+                            Кабинет первичного приема: 77-70-07
+                          </div>
+                        </li>
+
+                        <li class="contab__item">
+                          <div class="contab__address">г. Оренбург, пр. Гагарина, № 23</div>
+                          <div class="contab__bus">
+                            <div class="contab__bus-item">
+                              <p>
+                                <i>Ост. “1-я горбольница”:</i>
+                              </p>
+                              <p>
+                                1) Aвтобусы 45, 61, 21, 56, 31, 156, 67, 27. <br>
+                                2) Троллейбусы 4, 7.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="contab__phone">
+                            Зав. травматологическим пунктом № 2 Тимиров Азат Разифович: 71-83-30
+                          </div>
+                        </li>
+
+                        <li class="contab__item">
+                          <div class="contab__address">г. Оренбург, ул. Пролетарская, № 265</div>
+                          <div class="contab__bus">
+                            <div class="contab__bus-item">
+                              <p>
+                                <i>Ост. “Пролетарская”:</i>
+                              </p>
+                              <p>
+                                1) Aвтобусы  67, 33, 39, 32, 18с. <br>
+                                2) Троллейбусы 4, 6.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="contab__phone">
+                            Зав. травматологическим пунктом № 3 Полосов Михаил Ефимович: 52-17-12
+                          </div>
+                        </li>
+                      </ul>
+
+                      <div class="contab__map col-sm-7" id="map"></div>
+                    </div>
+                  </div>
 
                 </div>
               </div>
             </section>
-
-            <aside class="col-sm-4 col-md-3 main__sidebar">
-
-              <div class="box">
-                <div class="box__content">
-                  <ul class="list list_type_birdie">
-                    <li class="list__item"><a href="" class="list__link">Гинекология и акушерство</a></li>
-                    <li class="list__item"><a href="" class="list__link">Урология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Гастроэнтерология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Кардиология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Гастроэнтерология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Кардиология</a></li>
-                  </ul>
-                </div>
-              </div>
-            </aside>
           </div>
         </div>
       </main>
@@ -202,11 +261,14 @@
       </div>
     </footer>
   </div>
+  
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
   <!-- build:js js/script.js -->
   <script src="../bower_components/jquery/dist/jquery.js"></script>
   <script src="../bower_components/swiper/dist/js/swiper.jquery.js"></script>
   <script src="../bower_components/fancybox/source/jquery.fancybox.js"></script>
+  <script src="../bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
   <script src="js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
   <script src="js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
   <script src="js/app.js"></script>

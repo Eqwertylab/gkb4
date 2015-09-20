@@ -18,6 +18,11 @@
     height: 140px;
   }
 
+  .main__content
+  {
+    padding: 0 15px;
+  }
+
 
 
   /*
@@ -126,6 +131,19 @@
   a.license
   {
     width: 80%;
+  }
+
+
+
+  /*
+   * Элементы формы
+   */
+
+  .contab__title
+  {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 15px 0 0;
   }
 
 } /* <-- Small devices */

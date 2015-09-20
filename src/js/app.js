@@ -23,11 +23,62 @@ App = {
 
       // Календарь
       App.Fn.calendar();  
+
+      // Карта
+      App.Fn.map();  
     });
   },
 
 
   Fn: {
+
+    map: function() {
+
+      var myMap, 
+          myPlacemark;
+
+      ymaps.ready(init);
+
+      if( '#map' ) {
+
+        setMap();
+      }
+
+      function setMap() {
+
+        var coor = $('.contab__link_active').data('map');
+        
+      }
+
+      $('.contab__link').click(function(event) {
+      
+        event.preventDefault();
+
+        if( !$(this.hasClass('contab__link_active')) ) {
+          var coor = $(this).data('map');
+        }
+
+        var coor = $(this).data('map');
+
+        myMap.destroy();
+
+        alert(coor);
+      });
+
+      function init(x,y) { 
+          myMap = new ymaps.Map("map", {
+              center: [x, y],
+              zoom: 7
+          }); 
+          
+          myPlacemark = new ymaps.Placemark([x, y], {
+              hintContent: 'Москва!',
+              balloonContent: 'Столица России'
+          });
+          
+          myMap.geoObjects.add(myPlacemark);
+      }
+    },
 
     calendar: function() {
       $( "#datepicker" ).datepicker({

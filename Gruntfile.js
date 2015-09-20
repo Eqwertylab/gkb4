@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
     useminPrepare: {
 
-      html: 'src/index.html',
+      html: 'src/main.html',
 
       options: {
 
@@ -54,8 +54,22 @@ module.exports = function(grunt) {
 
           {
             expand: true,
-            src:'bower_components/fancybox/source/*.{jpg,png,gif}',
+            src:'bower_components/fancybox/source/**/*.{jpg,png,gif}',
             dest: 'build/css/',
+            filter: 'isFile',
+            flatten: true
+          }
+        ]
+      },
+
+      jqueryui: {
+
+        files: [
+
+          {
+            expand: true,
+            src:'src/js/jquery-ui-1.11.4.custom/images/**/*.{jpg,png,gif}',
+            dest: 'build/css/images/',
             filter: 'isFile',
             flatten: true
           }

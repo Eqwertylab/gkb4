@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../bower_components/bootstrap-grid-only/css/grid12.css">
   <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.css">
   <link rel="stylesheet" href="../bower_components/fancybox/source/jquery.fancybox.css">
+  <link rel="stylesheet" href="../bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css">
   <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css">
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/mobile-landscape.css">
@@ -30,11 +31,20 @@
 
     <ul class="mmenu">
       <li class="mmenu__item"><a href="#" class="mmenu__link">Главная</a></li>
-      <li class="mmenu__item mmenu__item_active mmenu__item_open mmenu__item_container">
+      <li class="mmenu__item mmenu__item_active mmenu__item_container">
         <a href="" class="mmenu__link">О больнице</a>
         <ul class="mmenu__inner">
           <li class="mmenu__item"><a href="#" class="mmenu__link">О больнице</a></li>
-          <li class="mmenu__item"><a href="#" class="mmenu__link">Руководство</a></li>
+          <li class="mmenu__item mmenu__item_container">
+            <a href="#" class="mmenu__link">Руководство</a>
+            <ul class="mmenu__inner">
+              <li class="mmenu__item"><a href="#" class="mmenu__link">О больнице</a></li>
+              <li class="mmenu__item"><a href="#" class="mmenu__link">Руководство</a></li>
+              <li class="mmenu__item"><a href="#" class="mmenu__link">Структура больницы</a></li>
+              <li class="mmenu__item"><a href="#" class="mmenu__link">Новости больницы</a></li>
+              <li class="mmenu__item"><a href="#" class="mmenu__link">Статьи</a></li>
+            </ul>
+          </li>
           <li class="mmenu__item"><a href="#" class="mmenu__link">Структура больницы</a></li>
           <li class="mmenu__item"><a href="#" class="mmenu__link">Новости больницы</a></li>
           <li class="mmenu__item"><a href="#" class="mmenu__link">Статьи</a></li>
@@ -47,9 +57,27 @@
       </li>
       <li class="mmenu__item"><a href="#" class="mmenu__link">Услуги</a></li>
       <li class="mmenu__item"><a href="#" class="mmenu__link">ОМС</a></li>
-      <li class="mmenu__item"><a href="#" class="mmenu__link">Запись на прием</a></li>
+      <li class="mmenu__item mmenu__item_container">
+        <a href="#" class="mmenu__link">Запись на прием</a>
+        <ul class="mmenu__inner">
+          <li class="mmenu__item"><a href="#" class="mmenu__link">О больнице</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Руководство</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Структура больницы</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Новости больницы</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Статьи</a></li>
+        </ul>
+      </li>
       <li class="mmenu__item"><a href="#" class="mmenu__link">Для пациента</a></li>
-      <li class="mmenu__item"><a href="#" class="mmenu__link">Контакты</a></li>
+      <li class="mmenu__item mmenu__item_container">
+        <a href="#" class="mmenu__link">Контакты</a>
+        <ul class="mmenu__inner">
+          <li class="mmenu__item"><a href="#" class="mmenu__link">О больнице</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Руководство</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Структура больницы</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Новости больницы</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Статьи</a></li>
+        </ul>
+      </li>
     </ul>
   </aside>
 
@@ -84,7 +112,7 @@
         <div class="container">
           <ul class="menu">
             <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Главная</a></li>
-            <li class="menu__item menu__item_level-1 menu__item_container">
+            <li class="menu__item menu__item_level-1 menu__item_active menu__item_container">
               <a href="" class="menu__link">О больнице</a>
               <ul class="menu__inner">
                 <li class="menu__item"><a href="#" class="menu__link">Общая информация</a></li>
@@ -93,7 +121,17 @@
                 <li class="menu__item"><a href="#" class="menu__link">Новости больницы</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Фотогалерея</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Видеогалерея</a></li>
+                <li class="menu__item menu__item_level-2 menu__item_container">
+                  <a href="#" class="menu__link">Видеогалерея</a>
+                  <ul class="menu__inner">
+                    <li class="menu__item"><a href="#" class="menu__link">Общая информация</a></li>
+                    <li class="menu__item"><a href="ya.ru" class="menu__link">Руководство</a></li>
+                    <li class="menu__item"><a href="https://ru.bem.info/method/naming-convention/#Имя-модификатора" class="menu__link">Структура больницы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Новости больницы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Фотогалерея</a></li>
+                  </ul>
+                </li>
                 <li class="menu__item"><a href="#" class="menu__link">Документы</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Лицензии</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Вакансии</a></li>
@@ -287,6 +325,7 @@
   <script src="../bower_components/jquery/dist/jquery.js"></script>
   <script src="../bower_components/swiper/dist/js/swiper.jquery.js"></script>
   <script src="../bower_components/fancybox/source/jquery.fancybox.js"></script>
+  <script src="../bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
   <script src="js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
   <script src="js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
   <script src="js/app.js"></script>
