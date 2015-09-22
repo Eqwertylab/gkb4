@@ -81,14 +81,15 @@ h2,h1
   -webkit-overflow-scrolling: touch;
 }
 
-.main__content
+.main__content,
+.main__sidebar
 {
   padding: 0 5px;
 }
 
 .open .mlayout__wrapper
 {
-  left: 230px;
+  left: 260px;
 
   overflow-y: hidden;
 }
@@ -144,11 +145,11 @@ p
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -230px;
+  left: -260px;
 
   overflow-y: auto;
 
-  width: 230px;
+  width: 260px;
 
   background: #eadbbb;
   z-index: 4000;
@@ -166,7 +167,7 @@ p
   top: 0;
   right: 0;
   bottom: 0;
-  left: 230px;
+  left: 260px;
 
   display: none;
 
@@ -197,7 +198,7 @@ a.mmenu__link
 {
   display: block;
 
-  padding: 15px 0 15px 15px;
+  padding: 15px;
 
   text-decoration: none;
   background-color: #eadbbb;
@@ -279,7 +280,7 @@ a.mmenu__link
 
 .mmenu__inner .mmenu__link
 {
-  padding: 12px 0 12px 12px;
+  padding: 12px;
 }
 
 .mmenu__inner .mmenu__item:last-child
@@ -873,6 +874,11 @@ a.menu__link
 {
   margin: 0 -1.25rem;
   overflow-x: auto;
+}
+
+.table_phones .table__td:nth-child(2)
+{
+  white-space: nowrap;
 }
 
 .table__item
@@ -1642,11 +1648,17 @@ a.license:hover
 {
   text-decoration: none;
   border-bottom: 1px dotted #0071c8;
+  font-weight: 600;
+}
+
+.contab__link.contab__link_active
+{
+  border-color: transparent;
 }
 
 .contab__body
 {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 }
 
 .contab__address,
@@ -1686,7 +1698,17 @@ a.license:hover
 
 .contab__map
 {
-  height: 450px;
+  height: 23rem;
+}
+
+.contab__item
+{
+  display: none;
+}
+
+.contab__item_active
+{
+  display: block;
 }
 
 
