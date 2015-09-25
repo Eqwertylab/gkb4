@@ -417,7 +417,6 @@ a.menu__link
 
 .menu__inner .menu__link
 {
-  background-color: #f0e4ca;
   border-top: 1px solid #f0f0f0;
   font-size: 1rem;
   line-height: 2.5rem;
@@ -880,6 +879,31 @@ a.menu__link
 {
   white-space: nowrap;
 }
+
+
+/* Inner contab__item */
+
+.table_contact
+{
+  margin: 0 -0.5rem;
+}
+
+.table_contact .table__td:nth-child(2)
+{
+  white-space: nowrap;
+}
+
+.table_contact .table__item
+{
+  background: transparent;
+}
+
+.table_contact .table__td
+{
+  padding: 0.5rem !important;
+}
+
+/* / <--  Inner contab__item */
 
 .table__item
 {
@@ -1663,7 +1687,9 @@ a.license:hover
 
 .contab__address,
 .contab__bus,
-.contab__phone
+.contab__phone,
+.contab__clock,
+.contab__user
 {
   padding-left: 2.5rem;
   background-repeat: no-repeat;
@@ -1693,6 +1719,18 @@ a.license:hover
 .contab__phone
 {
   background-image: url(../img/ico-phone.png);
+  background-size: 1.625rem auto;
+}
+
+.contab__clock
+{
+  background-image: url(../img/ico-clock.png);
+  background-size: 1.625rem auto;
+}
+
+.contab__user
+{
+  background-image: url(../img/ico-user.png);
   background-size: 1.625rem auto;
 }
 
