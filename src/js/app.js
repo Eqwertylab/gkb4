@@ -25,20 +25,49 @@ App = {
       App.Fn.calendar();  
 
       // Карта
-      App.Fn.map();  
+      // Инициализируется map-api
+
+      //Метрика
+      App.Fn.metrik(document, window, "yandex_metrika_callbacks");  
     });
   },
 
 
   Fn: {
 
+    metrik: function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32808455 = new Ya.Metrika({
+                    id:32808455,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    },
+
     map: function() {
 
-      ymaps.ready(init);
+      if( !$('#map').length ) return;
 
+      init();
+      
       function init() { 
-
-        if( !$('#map').length ) return;
 
         var map = setMap();
 
@@ -59,7 +88,6 @@ App = {
           map.destroy();
           map = setMap();
         });
-
       }
 
       function setMap() {

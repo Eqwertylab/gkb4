@@ -6,16 +6,5 @@
     font-size: 100%;
   }
 
-	
-
-  /*
-   * Главное меню
-   */
-  
-  a.menu__link
-  {
-    padding: 0 1.75rem;
-  }
-
 
 }  /* <-- Large devices */

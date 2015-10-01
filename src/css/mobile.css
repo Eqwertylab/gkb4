@@ -106,7 +106,7 @@ p
 
 
 /*
- * Адаптивне изображения
+ * Изображения
  */
 
 .img-responsive
@@ -114,9 +114,15 @@ p
   max-width: 100%;
 }
 
-.img-responsive_wide
+.img-wide
 {
   width: 100%;
+}
+
+.img-center
+{
+  display: block;
+  margin: auto;
 }
 
 
@@ -345,7 +351,7 @@ a.menu__link
   display: block;
 
   height: 3.5rem;
-  padding: 0 0.65rem;
+  padding: 0 1rem;
 
   text-decoration: none;
 
@@ -357,6 +363,38 @@ a.menu__link
 .menu__item_container > .menu__link
 {
   cursor: default;
+  position: relative;
+}
+
+.menu__item_container > .menu__link:before
+{
+  content: "";
+  display: none;
+  width: 0.625rem;
+  height: 1rem;
+  background-size: 0.625rem auto;
+  background-repeat: no-repeat;
+  background-image: url(../img/menu-arrow.png);
+  position: absolute;
+  opacity: 0.6;
+  right: 0.8rem;
+  top: 50%;
+  margin-top: -0.3125rem;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.menu__inner > .menu__item_container > .menu__link:before
+{
+  margin-top: -0.5rem;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .menu__item_level-1
@@ -404,7 +442,7 @@ a.menu__link
   list-style-type: none;
   top: 100%;
   left: 0;
-  background-color: #f0e4ca;
+  /*background-color: #f0e4ca;*/
   box-shadow: -4px 4px 6px rgba(0,0,0,0.1);
   z-index: 90;
 }
@@ -415,12 +453,24 @@ a.menu__link
   border-top: 1px solid #c7b796;
 }
 
-.menu__inner .menu__link
+.menu__inner .menu__item:first-child
+{
+  border-top: none;
+  padding-top: 1px;
+}
+
+.menu__inner .menu__item:first-child > a.menu__link
+{
+  border-top: none;
+}
+
+.menu__inner a.menu__link
 {
   border-top: 1px solid #f0f0f0;
   font-size: 1rem;
   line-height: 2.5rem;
   height: 2.7rem;
+  padding: 0 .65rem;
 }
 
 .menu__item:hover > .menu__inner,
@@ -1022,6 +1072,12 @@ a.menu__link
   margin-bottom: 1.25rem;
 }
 
+.list_type_birdie > .list__item_active > a
+{
+  text-decoration: none;
+  color: #242424;
+}
+
 .list_type_news > .list__item
 {
   margin-bottom: 0.625rem;
@@ -1283,12 +1339,16 @@ a.license:hover
   margin: 0;
   padding: 0;
   list-style-type: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #aeaeae;
 }
 
 .bcrum__item
 {
-  display: inline-block;
-  vertical-align: middle;
+  display: inline;
+  vertical-align: top;
 }
 
 .bcrum__item + .bcrum__item:before
@@ -1352,7 +1412,17 @@ a.license:hover
   vertical-align: middle;
   border: none;
   opacity: 0.8;
+  position: relative;
 }
+
+/*
+.nsearch__toggle:after
+{
+  position: absolute;
+  display: block;
+  content: " ";
+}
+*/
 
 .nsearch__submit:hover,
 .nsearch__toggle:hover
@@ -1425,6 +1495,7 @@ a.license:hover
   height: 320px;
 }
 
+a.swmain__caption,
 .swmain__caption
 {
   font-size: 1.6875rem;
@@ -1437,6 +1508,13 @@ a.license:hover
   top: 50%;
   margin-top: -35px;
   text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+a.swmain__caption:hover
+{
+  text-decoration: underline;
 }
 
 .swmain .swiper-slide
@@ -1462,6 +1540,7 @@ a.license:hover
   width: 12px;
   height: 12px;
 }
+
 
 
 
@@ -1623,6 +1702,38 @@ a.license:hover
 
 
 
+/*
+ * Вакансии
+ */
+
+.job
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.job__item+.job__item
+{
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #d4dee6;
+}
+
+.job__title
+{
+  font-size: 1.375rem;
+}
+
+.job__param
+{
+  font-weight: 600;
+  color: rgb(90, 90, 90);
+  display: inline-block;
+  margin-right: 0.625rem;
+}
+
+
 
 /*
  * Календарь
@@ -1646,7 +1757,7 @@ a.license:hover
 
 
 /*
- * Элементы формы
+ * Контакты
  */
 
 .contab__head
@@ -1784,7 +1895,8 @@ textarea.form__control
   padding: 0.9375rem;
 }
 
-input.form__control_error
+input.form__control_error,
+textarea.form__control_error
 {
   border-color: #ff0000 !important;
   background: #fff2f2;

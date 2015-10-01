@@ -11,4 +11,17 @@
     width: 50%;
     float: left;
   }
+
+
+  /*
+   * Вакансии
+   */
+  .job__inner
+  {
+    padding-left: 7rem;
+    background-image: url(../img/ico-job.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 6.25rem;
+  }
 }
