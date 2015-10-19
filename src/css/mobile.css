@@ -385,6 +385,17 @@ a.menu__link
   -webkit-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
+
+  transition: top 0.3s, right 0.3s;
+  -moz-transition: top 0.3s, right 0.3s;
+  -ms-transition: top 0.3s, right 0.3s;
+  -webkit-transition: top 0.3s, right 0.3s;
+  -o-transition: top 0.3s, right 0.3s;
+}
+
+.menu__item_container:hover > .menu__link:before
+{
+  top: 55%;
 }
 
 .menu__inner > .menu__item_container > .menu__link:before
@@ -395,6 +406,12 @@ a.menu__link
   -webkit-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
+}
+
+.menu__inner > .menu__item_container:hover > .menu__link:before
+{
+  top: 50%;
+  right: 0.6rem;
 }
 
 .menu__item_level-1
@@ -925,10 +942,24 @@ a.menu__link
   overflow-x: auto;
 }
 
+/* В нумерованном списке */
+
+.table_num_list
+{
+  margin: 1rem -1.25rem 0 -6.25rem;
+}
+/* / <-- В нумерованном списке */
+
+
+
+/* Телефоны на стр. "Контакты" */
+
 .table_phones .table__td:nth-child(2)
 {
   white-space: nowrap;
 }
+/* / <-- Телефоны на стр. "Контакты" */
+
 
 
 /* Inner contab__item */
@@ -952,8 +983,9 @@ a.menu__link
 {
   padding: 0.5rem !important;
 }
-
 /* / <--  Inner contab__item */
+
+
 
 .table__item
 {
@@ -993,6 +1025,52 @@ a.menu__link
 {
   padding-left: 1.25rem;
 }
+
+
+
+/*
+ * Таблица альтернативный синтаксис
+ */
+
+.table__item-alternative
+{
+  width: 100%;
+  background: inherit;
+}
+
+.table__item-alternative th
+{
+  font-weight: 400;
+  border-bottom: 3px solid #bababa;
+  padding: 0.875rem;
+  border-right: 1px solid #e8e8e8;
+}
+
+.table__item-alternative td
+{
+  padding: 0.875rem;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.table__item-alternative tr:last-child td
+{
+  border-bottom: none;
+}
+
+.table__item-alternative th:last-child,
+.table__item-alternative td:last-child
+{
+  border-right: none;
+  padding-right: 1.25rem;
+}
+
+.table__item-alternative th:first-child,
+.table__item-alternative td:first-child
+{
+  padding-left: 1.25rem;
+}
+
 
 
 
@@ -1136,19 +1214,31 @@ a.menu__link
  * Лицензия
  */
 
-a.license
+.license
+{
+  text-align: center;
+}
+
+.license + .license
+{
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #d4dee6;
+}
+
+a.license__inner
 {
   display: block;
   border: 2rem solid #ede1c7;
   border-bottom: 1rem solid #ede1c7;
   background-color: #ede1c7;
   max-width: 400px;
-  margin: auto;
+  margin: 0 auto 1rem;
   color: #000;
   text-decoration: none;
 }
 
-a.license:hover 
+a.license__inner:hover 
 {
   color: #000;
 }
@@ -1221,10 +1311,20 @@ a.license:hover
   background-image: url(../img/zoom.png);
 }
 
-.license:hover .license__image-shadow:before
+.license__inner:hover .license__image-shadow:before
 {
   background-color: rgba(0,124,220,0.2);
   background-size: 6.8125rem 6.8125rem;
+}
+
+.license__download
+{
+  display: inline-block;
+  padding-left: 1.6875rem;
+  background-repeat: no-repeat;
+  background-position: left 2px;
+  background-size: 1.0625rem;
+  background-image: url(../img/list-download.png);
 }
 
 
