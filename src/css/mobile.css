@@ -104,6 +104,16 @@ button, input, select
   font-size: 1rem;
 }
 
+.center-block
+{
+  float: none;
+}
+
+.price
+{
+  white-space: nowrap;
+}
+
 
 /*
  * Изображения
@@ -753,6 +763,12 @@ a.menu__link
   margin-top: 1rem;
 }
 
+.box__description
+{
+  border-top: 1px solid #ede1c7;
+  padding-top: 15px;
+}
+
 
 
 /*
@@ -1103,6 +1119,14 @@ a.menu__link
   padding-left: 1.25rem;
 }
 
+/*
+* Таблица "Популярные услуги" на главной странице
+*/
+
+.table_popular-col_2
+{
+  border-top: 1px solid #e8e8e8;
+}
 
 
 
@@ -1615,66 +1639,6 @@ a.license__inner:hover
 {
   border-bottom: 1px solid #000000;
 }
-
-
-
-/*
- * Слайдер
- */
-
-.swmain
-{
-  height: 320px;
-}
-
-a.swmain__caption,
-.swmain__caption
-{
-  font-size: 1.6875rem;
-  font-weight: 700;
-  text-shadow: 0 0 1px rgba(0,0,0,1);
-  color: #ffffff;
-  position: absolute;
-  left: 60px;
-  right: 60px;
-  top: 50%;
-  margin-top: -35px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-}
-
-a.swmain__caption:hover
-{
-  text-decoration: underline;
-}
-
-.swmain .swiper-slide
-{
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-
-.swmain .swiper-button-prev {
-  background-image: url("../img/slider-arrow-left.png");
-  left: 20px;
-}
-
-.swmain .swiper-button-next {
-  background-image: url("../img/slider-arrow-right.png");
-  right: 20px;
-}
-
-.swmain .swiper-pagination-bullet {
-  background: #ffffff;
-  width: 12px;
-  height: 12px;
-}
-
-
-
 
 /*
  * Меню контента страницы

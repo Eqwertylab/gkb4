@@ -13,7 +13,6 @@
   <!-- build:css css/style.css-->
   <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="../bower_components/bootstrap-grid-only/css/grid12.css">
-  <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.css">
   <link rel="stylesheet" href="../bower_components/fancybox/source/jquery.fancybox.css">
   <link rel="stylesheet" href="../bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css">
   <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -98,14 +97,18 @@
       </header>
 
       <header class="header">
-        <div class="header__logo">
-          <a href="" class="header-logo"></a>
-        </div>
-        <div class="header__tel">
-          <div class="header-tel">+7 (3532) 45-88-00</div>
-        </div>
-        <div class="header__order">
-          <button class="header-order">Запись<br>на&nbsp;прием</button>
+        <div class="container">
+          <div class="col-sm-4 header__logo">
+            <a href="" class="header-logo"></a>
+          </div>
+          <div class="col-sm-8">
+            <div class="header__tel">
+              <div class="header-tel">+7 (3532) <b>45-88-00</b></div>
+            </div>
+            <div class="header__order">
+              <button class="header-order">Запись<br>на&nbsp;прием</button>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -160,53 +163,100 @@
       <main class="main">
         <div class="container">
           <div class="row">
-            <section class="col-sm-8 main__content">
+            <section class="col-sm-12 main__content">
               
+              <!--
               <div class="box box_style_attention">
                 <div class="box__content">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae consequuntur omnis magni molestias ipsam assumenda, quia corporis porro magnam repellat dolores repellendus reiciendis, nam facere iure atque beatae officiis pariatur.
                 </div>
               </div>
+              -->
 
-              <div class="box hidden-xs">
-                <!-- Slider main container -->
-                <div class="swiper-container swmain">
-                  
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide" style="background-image: url(img/sliders/slide1.jpg)">
-                      <a href="" class="swmain__caption">Высокотехнологичное <br>оборудование</a>
+              <div class="box">
+                <div class="box__header">Наши направления</div>
+                <div class="box__content">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <ul class="list list_type_arrow">
+                        <li class="list__item"><a href="" class="list__link">Эндопротезирование</a></li>
+                        <li class="list__item"><a href="" class="list__link">Реконструктивно-восстановительные операции</a></li>
+                        <li class="list__item"><a href="" class="list__link">Лечение ожогов и их последствий</a></li>
+                        <li class="list__item"><a href="" class="list__link">Артроскопия</a></li>
+                      </ul>
                     </div>
-                    <div class="swiper-slide" style="background-image: url(img/sliders/slide1.jpg)">
-                      <a href="" class="swmain__caption">Оборудование <br>высокотехнологичное</a>
-                    </div>
-                    <div class="swiper-slide" style="background-image: url(img/sliders/slide1.jpg)">
-                      <a href="" class="swmain__caption">Третий <br>слайд</a>
+                    <div class="col-sm-6">
+                      <ul class="list list_type_arrow">
+                        <li class="list__item"><a href="" class="list__link">Вертебрология</a></li>
+                        <li class="list__item"><a href="" class="list__link">Микрохирургия</a></li>
+                        <li class="list__item"><a href="" class="list__link">Лечение остеомиелита</a></li>
+                      </ul>
                     </div>
                   </div>
-                  
-                  
-                  <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-
-
-                  <!-- If we need pagination -->
-                  <div class="swiper-pagination"></div>
-
+                  <div class="box__description">
+                    <div class="row">
+                      <div class="col-sm-8 center-block">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eveniet ullam quo, dicta laboriosam esse labore quis vitae ducimus architecto iste sint at aliquam repellat, animi consequatur distinctio adipisci enim.
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div class="box">
+                <div class="box__header">Популярные услуги</div>
                 <div class="box__content">
-                  <p>В государственном бюджетном учреждении здравоохранения «Городская клиническая больница № 4» города Оренбурга, возглавляемым Пупыниным Дмитрием Юрьевичем сосредоточена вся взрослая городская травматологическая служба, где пациенты получают стационарное и амбулаторное лечение изолированных, множественных и сочетанных повреждений костно-мышечного аппарата, в т.ч., позвоночника, таза, лечение осложнений в посттравматическом периоде, ортопедической патологии, ожогов, отморожений.</p>
-                  
-                  <p>В учреждении внедрены артроскопическая хирургия суставов, остеосинтез внутрисуставных переломов под артроскопическим контролем, остеосинтез длинных трубчатых костей стержнями с блокированием без рассверливания каналов, эндопротезирование тазобедренного и коленного суставов. Успешно реализуются новые методики лечения раневой инфекции, травм кисти, повреждений сухожилий, обширных дефектов кожи после нагноения ран, деформаций, дефектов и несращений переломов костей конечностей на фоне остеомиелита. Применяется материал«ЛитАр» для возмещения дефектов в опорных тканях. Осуществляется комплексное лечение больных с ожогами свыше 30 % поверхности тела, проводятся восстановительные пластические операции при послеожоговой рубцовой деформации лица и шеи. С обнадеживающими результатами интенсивно развивается хирургия позвоночно-спинальной травмы.</p>
-                  <div class="box__tool"><a href="" class="btn btn_arrow">Подробнее о больнице</a></div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="table table_popular-col_1">
+                        <table class="table__item">
+                          <tr class="table__tr">
+                            <td class="table__td">Ультразвуковое исследование мягких тканей (одна анатомическая зона)</td>
+                            <td class="table__td"><span class="price">554 р.</span></td>
+                          </tr>
+                          <tr class="table__tr">
+                            <td class="table__td">УЗИ кожи (одна анатомическая зона)</td>
+                            <td class="table__td"><span class="price">554 р.</span></td>
+                          </tr>
+                          <tr class="table__tr">
+                            <td class="table__td">УЗИ сустава</td>
+                            <td class="table__td"><span class="price">554 р.</span></td>
+                          </tr>
+                          <tr class="table__tr">
+                            <td class="table__td">Ультразвуковое исследование селезенки</td>
+                            <td class="table__td"><span class="price">343 р.</span></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="table table_popular-col_2">
+                        <table class="table__item">
+                          <tr class="table__tr">
+                            <td class="table__td">Ультразвуковое исследование мягких тканей (одна анатомическая зона)</td>
+                            <td class="table__td"><span class="price">554 р.</span></td>
+                          </tr>
+                          <tr class="table__tr">
+                            <td class="table__td">УЗИ кожи (одна анатомическая зона)</td>
+                            <td class="table__td"><span class="price">554 р.</span></td>
+                          </tr>
+                          <tr class="table__tr">
+                            <td class="table__td">УЗИ сустава</td>
+                            <td class="table__td"><span class="price">554 р.</span></td>
+                          </tr>
+                          <tr class="table__tr">
+                            <td class="table__td">Ультразвуковое исследование селезенки</td>
+                            <td class="table__td"><span class="price">343 р.</span></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box__tool"><a href="#" class="btn btn_arrow">Смотреть все услуги</a></div>
                 </div>
               </div>
-
+              
+              <!--
               <div class="box">
                 <ul class="panel">
                   <li class="panel__item panel__item_color_red">
@@ -251,8 +301,10 @@
                   </li>
                 </ul>
               </div>
+              -->
 
             </section>
+            <!--
             <aside class="col-sm-4 main__sidebar">
 
               <div class="box">
@@ -309,6 +361,7 @@
                 </div>
               </div>
             </aside>
+            -->
           </div>
         </div>
       </main>
@@ -324,7 +377,6 @@
 
   <!-- build:js js/script.js -->
   <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../bower_components/swiper/dist/js/swiper.jquery.js"></script>
   <script src="../bower_components/fancybox/source/jquery.fancybox.js"></script>
   <script src="../bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
   <script src="js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
