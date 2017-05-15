@@ -607,7 +607,7 @@ a.menu__link
 
 .header
 {
-  background: #fff;
+  background: #f4f4f4 url(../img/background-top-blur.jpg) no-repeat center top;
   padding-bottom: 25px;
 }
 
@@ -642,8 +642,14 @@ a.menu__link
   text-align: center;
   display: inline-block;
   background: url(../img/tel.png) no-repeat left center / 45px 45px;
-  padding: 7px 0 10px 55px;
+  padding: 0 0 10px 55px;
   height: 45px;
+}
+
+.header-tel__desc
+{
+  font-size: 13px;
+  color: #5c5c5c;
 }
 
 .header-order
