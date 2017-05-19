@@ -1,9 +1,23 @@
-@media (min-width: 1200px) {
-  
+@media (min-width: 1200px)
+{
 	html 
   {
     font-size: 100%;
   }
 
+  /*
+  * Блок "услуга"
+  */
+
+  a.list-thumb
+  {
+    padding: 20px;
+  }
+
+  .list-thumb__img
+  {
+    padding-top: 66%;
+    background: #e9f2f7 no-repeat center center / cover;
+  }
 
 }  /* <-- Large devices */

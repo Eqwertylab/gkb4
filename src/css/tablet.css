@@ -215,4 +215,21 @@
     width: 20%;
   }
 
+  /*
+  * Список "Наши направления"
+  */
+
+  /*
+  * Блок "услуга"
+  */
+
+  .list-thumb
+  {
+    padding: 15px;
+  }
+
+  .list-thumb__title h2
+  {
+    margin-top: 0;
+  }
 } /* <-- Small devices */
