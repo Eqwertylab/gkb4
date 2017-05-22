@@ -1311,6 +1311,7 @@ a.menu__link
 
 .list-thumb__img
 {
+  display: block;
   height: 100%;
   padding-top: 66%;
   background: #e9f2f7 no-repeat center center / cover;
