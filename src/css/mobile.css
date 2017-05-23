@@ -12,7 +12,6 @@ body
 {
   overflow-x: hidden;
   min-width: 320px;
-  height: 100%;
 }
 
 html.open
@@ -630,8 +629,8 @@ a.menu__link
 .header-logo
 {
   width: 214px;
-  height: 197px;
-  background: url(../img/logo.jpg) no-repeat center center;
+  height: 195px;
+  background: url(../img/logo.png) no-repeat center center;
   display: block;
   margin: auto;
 }

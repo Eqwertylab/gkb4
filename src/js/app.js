@@ -215,3 +215,5 @@ App = {
 }
 
 App.In(jQuery);
+
+AOS.init();
