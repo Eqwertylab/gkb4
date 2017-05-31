@@ -4,27 +4,6 @@
   {
     font-size: 90%;
   }
-  
-
-
-  /*
-   * Главное меню
-   */
-  
-  .menu__item_container > .menu__link
-  {
-    padding: 0rem 2.27rem 0 1rem;
-  }  
-
-  .menu__inner > .menu__item_container > .menu__link
-  {
-    padding: 0rem 2.27rem 0 0.65rem;
-  }
-
-  .menu__item_container > .menu__link:before
-  {
-    display: block;
-  }
 
 
   /*

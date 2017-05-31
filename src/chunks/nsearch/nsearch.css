@@ -1,0 +1,112 @@
+.nsearch
+{
+  float: right;
+  position: relative;
+  height: 3.51rem;
+}
+
+.nsearch__inner
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  white-space: nowrap;
+  height: 3.51rem;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.nsearch__submit,
+.nsearch__toggle
+{
+  height: 100%;
+  width: 40px;
+  background: url(./img/search.png) no-repeat center center;
+  background-size: 1.5625rem;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  opacity: 0.8;
+  position: relative;
+}
+
+.nsearch__submit:hover,
+.nsearch__toggle:hover
+{
+  opacity: 1;
+}
+
+.nsearch__submit
+{
+  display: none;
+}
+
+.nsearch__field
+{
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.nsearch_open .nsearch__inner
+{
+  padding: 0 1.5rem 0 1rem;
+  background: #ffffff;
+}
+
+.nsearch_open .nsearch__field
+{
+  width: 300px;
+}
+
+.nsearch_open .nsearch__toggle
+{
+  display: none;
+}
+
+.nsearch_open .nsearch__submit
+{
+
+  display: inline-block;
+}
+
+.nsearch__input
+{
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  outline: none;
+  width: 300px;
+  background: none;
+}
+
+.nsearch__input:focus
+{
+  border-bottom: 1px solid #000000;
+}
+
+@media only screen and (min-resolution: 144dpi)
+{
+
+}
+
+@media (min-width: 768px)
+{
+
+}
+
+@media (min-width: 992px)
+{
+}
+
+@media (min-width: 1200px)
+{
+
+}
