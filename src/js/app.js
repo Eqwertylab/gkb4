@@ -16,7 +16,7 @@ App = {
       App.Fn.searchbox(); 
 
       // Слайдеры
-      App.Fn.slider();  
+      // App.Fn.slider();  
 
       // Всплывающие окна
       App.Fn.upwindow();  
