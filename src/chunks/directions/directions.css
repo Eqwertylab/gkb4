@@ -1,5 +1,10 @@
 /* List */
 
+.directions
+{
+  /*height: 500px;*/
+}
+
 .directions__item
 {
   margin-bottom: 15px;
@@ -10,6 +15,12 @@
 .direction
 {
   position: relative;
+  z-index: 1;
+}
+
+.direction:hover
+{
+  z-index: 2;
 }
 
 .direction__link
@@ -17,6 +28,8 @@
   padding: 15px 15px 0;
   background: #fff;
   border: 1px solid #fff;
+  position: relative;
+  z-index: 2;
 }
 
 .direction__link:hover
@@ -24,6 +37,7 @@
   border: 1px solid #e8e8e8;
   border-bottom: 0;
   background: #fcf7eb;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 }
 
 .direction__link > a 
@@ -36,7 +50,7 @@
   display: block;
   border-radius: 100%;
   width: 100%;
-  max-width: 230px;
+  max-width: 180px;
   border: 1px solid #e8e8e8;
   margin: auto;
 }
@@ -68,11 +82,17 @@
   right: 0;
   background: #fcf7eb;
   padding: 0 15px 15px;
-  z-index: 2;
+  z-index: 3;
   border: 1px solid #e8e8e8;
   border-top: 0;
   font-size: 0.875em;
   color: #626262;
+  /*box-shadow: 0 15px 20px rgba(0, 0, 0, .1);*/
+}
+
+.direction__desc ul
+{
+  padding-left: 1.2rem;
 }
 
 .direction__link:hover + .direction__desc
@@ -92,6 +112,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
+    justify-content: center;
   }
 
   .directions__item
