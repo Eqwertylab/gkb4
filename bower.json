@@ -2,7 +2,7 @@
   "name": "gkb4",
   "version": "0.0.0",
   "authors": [
-    "Eqwertylab <79225555735@ya.ru>"
+    "Dmitry Karyakin <skycrazyk@gmail.com>"
   ],
   "description": "gorodskaya klinicheskaya bolnica",
   "keywords": [
@@ -24,7 +24,6 @@
     "normalize.css": "~3.0.3",
     "bootstrap-grid-only": "https://github.com/zirafa/bootstrap-grid-only.git",
     "jquery": "~2.1.4",
-    "swiper": "~3.1.2",
     "fancybox": "~2.1.5",
     "aos": "^2.1.1"
   }

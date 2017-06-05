@@ -19,6 +19,7 @@
   "devDependencies": {
     "basisjs-tools-build": "^1.10.1",
     "exec": "^0.2.1",
+    "gulp": "^3.9.1",
     "panini": "^1.4.0"
   }
 }

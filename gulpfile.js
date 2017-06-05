@@ -14,7 +14,7 @@ gulp.task('clean', function(cb)
 
 gulp.task('build', ['clean'], function(cb)
 {
-  exec('node ./node_modules/basisjs-tools-build/bin/build build -p -b . -f ./src/main.html -o ./build/', function (err, stdout, stderr)
+  exec('node ./node_modules/basisjs-tools-build/bin/build build -p -b . -f ./dist/home.html -o ./build/', function (err, stdout, stderr)
   {
     console.log(stdout);
     console.log(stderr);
@@ -28,13 +28,13 @@ gulp.task('pages', function()
 
   return gulp.src('src/pages/**/*.html')
     .pipe(panini({
-      root: 'src/',
+      root: 'src/pages/',
       layouts: 'src/layouts/',
       partials: 'src/chunks/',
       helpers: 'src/helpers/',
       data: 'src/data/'
     }))
-    .pipe(gulp.dest('./src/'));
+    .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('watch', ['pages'], function()
