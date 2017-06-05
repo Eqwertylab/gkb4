@@ -3,40 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 
   <title>ГБУЗ «ГКБ № 4» г. Оренбурга - Главная</title>
   
-  <link rel="icon" type="image/png" href="favicon.png">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-  <!-- build:css css/style.css-->
   <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="../bower_components/bootstrap-grid-only/css/grid12.css">
-  <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.css">
   <link rel="stylesheet" href="../bower_components/fancybox/source/jquery.fancybox.css">
+  <link rel="stylesheet" href="../bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css">
+  <link rel="stylesheet" href="../bower_components/aos/dist/aos.css">
   <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css">
-  <link rel="stylesheet" href="css/mobile.css">
-  <link rel="stylesheet" href="css/mobile-landscape.css">
-  <link rel="stylesheet" href="css/tablet.css">
-  <link rel="stylesheet" href="css/notebook.css">
-  <link rel="stylesheet" href="css/largescreen.css">
-  <link rel="stylesheet" href="css/ranges.css">
-  <!-- endbuild -->
-</head>
-<body class="mlayout">
-  <aside class="mlayout__side">
 
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/mobile-landscape.css">
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="stylesheet" href="./css/notebook.css">
+  <link rel="stylesheet" href="./css/largescreen.css">
+  <link rel="stylesheet" href="./css/ranges.css">
+
+  <link rel="stylesheet" href="./chunks/menu/menu.css">
+  <link rel="stylesheet" href="./chunks/nsearch/nsearch.css">
+  <link rel="stylesheet" href="./chunks/directions/directions.css">
+  
+</head>
+
+<body class="mlayout">
+  
+  <aside class="mlayout__side">
     <ul class="mmenu">
       <li class="mmenu__item"><a href="#" class="mmenu__link">Главная</a></li>
-      <li class="mmenu__item mmenu__item_active mmenu__item_container">
+      <li class="mmenu__item mmenu__item_active ">
         <a href="" class="mmenu__link">О больнице</a>
         <ul class="mmenu__inner">
           <li class="mmenu__item"><a href="#" class="mmenu__link">О больнице</a></li>
-          <li class="mmenu__item"><a href="#" class="mmenu__link">Руководство</a></li>
+          <li class="mmenu__item ">
+            <a href="#" class="mmenu__link">Руководство</a>
+            <ul class="mmenu__inner">
+              <li class="mmenu__item"><a href="#" class="mmenu__link">О больнице</a></li>
+              <li class="mmenu__item"><a href="#" class="mmenu__link">Руководство</a></li>
+              <li class="mmenu__item"><a href="#" class="mmenu__link">Структура больницы</a></li>
+              <li class="mmenu__item"><a href="#" class="mmenu__link">Новости больницы</a></li>
+              <li class="mmenu__item"><a href="#" class="mmenu__link">Статьи</a></li>
+            </ul>
+          </li>
           <li class="mmenu__item"><a href="#" class="mmenu__link">Структура больницы</a></li>
           <li class="mmenu__item"><a href="#" class="mmenu__link">Новости больницы</a></li>
-          <li class="mmenu__item"><a href="#" class="mmenu__link">Статьи</a></li>
+          <li class="mmenu__item mmenu__item_active"><a href="#" class="mmenu__link">Статьи</a></li>
           <li class="mmenu__item"><a href="#" class="mmenu__link">Фотогалерея</a></li>
           <li class="mmenu__item"><a href="#" class="mmenu__link">Видеогалерея</a></li>
           <li class="mmenu__item"><a href="#" class="mmenu__link">Документы</a></li>
@@ -46,18 +60,35 @@
       </li>
       <li class="mmenu__item"><a href="#" class="mmenu__link">Услуги</a></li>
       <li class="mmenu__item"><a href="#" class="mmenu__link">ОМС</a></li>
-      <li class="mmenu__item"><a href="#" class="mmenu__link">Запись на прием</a></li>
+      <li class="mmenu__item ">
+        <a href="#" class="mmenu__link">Запись на прием</a>
+        <ul class="mmenu__inner">
+          <li class="mmenu__item"><a href="#" class="mmenu__link">О больнице</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Руководство</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Структура больницы</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Новости больницы</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Статьи</a></li>
+        </ul>
+      </li>
       <li class="mmenu__item"><a href="#" class="mmenu__link">Для пациента</a></li>
-      <li class="mmenu__item"><a href="#" class="mmenu__link">Контакты</a></li>
+      <li class="mmenu__item ">
+        <a href="#" class="mmenu__link">Контакты</a>
+        <ul class="mmenu__inner">
+          <li class="mmenu__item"><a href="#" class="mmenu__link">О больнице</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Руководство</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Структура больницы</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Новости больницы</a></li>
+          <li class="mmenu__item"><a href="#" class="mmenu__link">Статьи</a></li>
+        </ul>
+      </li>
     </ul>
   </aside>
 
   <div class="mlayout__curtain" id="mlayout__curtain"></div>
 
   <div class="mlayout__wrapper content">
-    
     <div class="content__top">
-      
+
       <header class="mheader visible-xs">
         <div class="mheader__title">ГБУЗ «ГКБ № 4» г. Оренбурга</div>
         <div class="mheader__toggle" id="mlayout__toggle">
@@ -67,32 +98,48 @@
         </div>
         <a href="#" class="mheader__logo"></a>
       </header>
-
       <header class="header">
-        <div class="banner">
-          <div class="container">
-            <div class="banner__caption hidden-xs">
-              <span class="banner__description">Государственное бюджетное учреждение здравоохранения</span>
-              <span class="banner__title">Городская клиническая больница № 4 <br>города Оренбурга</span>
+        <div class="container">
+          <div class="col-sm-4 header__logo">
+            <a href="" class="header-logo"></a>
+          </div>
+          <div class="col-sm-8">
+            <div class="header__tel">
+              <div class="header-tel">
+                <div class="header-tel__tel">+7 (3532) <b>45-88-00</b></div>
+                <div class="header-tel__desc">Многоканальный</div>
+              </div>
+            </div>
+            <div class="header__order">
+              <button class="header-order">Запись<br>на&nbsp;прием</button>
             </div>
           </div>
         </div>
       </header>
-
       <nav class="nav hidden-xs">
         <div class="container">
           <ul class="menu">
             <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Главная</a></li>
-            <li class="menu__item menu__item_level-1 menu__item_container">
+            <li class="menu__item menu__item_level-1 menu__item_active ">
               <a href="" class="menu__link">О больнице</a>
               <ul class="menu__inner">
                 <li class="menu__item"><a href="#" class="menu__link">Общая информация</a></li>
-                <li class="menu__item"><a href="ya.ru" class="menu__link">Руководство</a></li>
+                <li class="menu__item menu__item_active"><a href="ya.ru" class="menu__link">Руководство</a></li>
                 <li class="menu__item"><a href="https://ru.bem.info/method/naming-convention/#Имя-модификатора" class="menu__link">Структура больницы</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Новости больницы</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Фотогалерея</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Видеогалерея</a></li>
+                <li class="menu__item menu__item_level-2 ">
+                  <a href="#" class="menu__link">Видеогалерея</a>
+                  <ul class="menu__inner">
+                    <li class="menu__item"><a href="#" class="menu__link">Общая информация</a></li>
+                    <li class="menu__item"><a href="ya.ru" class="menu__link">Руководство</a></li>
+                    <li class="menu__item"><a href="https://ru.bem.info/method/naming-convention/#Имя-модификатора" class="menu__link">Структура больницы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Новости больницы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Фотогалерея</a></li>
+                  </ul>
+                </li>
                 <li class="menu__item"><a href="#" class="menu__link">Документы</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Лицензии</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Вакансии</a></li>
@@ -104,7 +151,7 @@
             <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Для пациента</a></li>
             <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Контакты</a></li>
           </ul>
-
+      
           <form action="http://yandex.ru/search/" class="nsearch" id="nsearch">
             <div class="nsearch__inner" id="nsearch__inner">
               <div class="nsearch__toggle" id="nsearch__toggle"></div>
@@ -120,17 +167,14 @@
       <main class="main">
         <div class="container">
           <div class="row">
-            <section class="col-sm-8 col-md-9 main__content">
-
+            <section class="col-sm-12 main__content">
               <div class="box">
                 <div class="box__content">
-
                   <ul class="bcrum">
                     <li class="bcrum__item"><a href="">Главная</a></li>
                     <li class="bcrum__item"><a href="">О больнице</a></li>
                     <li class="bcrum__item"><span>Общие сведения</span></li>
                   </ul>
-
                   <h1>Нормативная документация</h1>
                   
                   <ul class="docs">
@@ -147,7 +191,7 @@
                         </ul>
                       </div>
                     </li>
-
+                  
                     <li class="docs__item box__row">
                       <div class="docs__title">1-го сентября отмечался День города</div>
                       <div class="docs__tool">
@@ -162,7 +206,7 @@
                       </div>
                     </li>
                   </ul>
-
+                  
                   <ul class="paginat">
                     <li class="paginat__item"><span>&#171;</span></li>
                     <li class="paginat__item paginat__item_active"><a href="#">1</a></li>
@@ -170,26 +214,9 @@
                     <li class="paginat__item"><a href="#">3</a></li>
                     <li class="paginat__item"><a href="#">&#187;</a></li>
                   </ul>
-
                 </div>
               </div>
             </section>
-
-            <aside class="col-sm-4 col-md-3 main__sidebar">
-
-              <div class="box">
-                <div class="box__content">
-                  <ul class="list list_type_birdie">
-                    <li class="list__item"><a href="" class="list__link">Гинекология и акушерство</a></li>
-                    <li class="list__item"><a href="" class="list__link">Урология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Гастроэнтерология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Кардиология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Гастроэнтерология</a></li>
-                    <li class="list__item"><a href="" class="list__link">Кардиология</a></li>
-                  </ul>
-                </div>
-              </div>
-            </aside>
           </div>
         </div>
       </main>
@@ -202,14 +229,15 @@
       </div>
     </footer>
   </div>
-
-  <!-- build:js js/script.js -->
   <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../bower_components/swiper/dist/js/swiper.jquery.js"></script>
   <script src="../bower_components/fancybox/source/jquery.fancybox.js"></script>
-  <script src="js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
-  <script src="js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
-  <script src="js/app.js"></script>
-  <!-- endbuild -->
+  <script src="../bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+  <script src="../bower_components/swiper/dist/js/swiper.jquery.js"></script>
+  <script src="../bower_components/aos/dist/aos.js"></script>
+  <script src="./js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+  <script src="./js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+  <script src="./chunks/directions/directions.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?onload=App.Fn.map&lang=ru_RU" type="text/javascript"></script>
 </body>
 </html>

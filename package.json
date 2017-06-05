@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Eqwertylab/gkb4#readme",
   "devDependencies": {
     "basisjs-tools-build": "^1.10.1",
-    "grunt": "^0.4.5",
-    "grunt-exec": "^2.0.0"
+    "exec": "^0.2.1",
+    "panini": "^1.4.0"
   }
 }

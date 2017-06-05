@@ -7,23 +7,31 @@
 
   <title>ГБУЗ «ГКБ № 4» г. Оренбурга - Главная</title>
   
-  <link rel="icon" type="image/png" href="favicon.png">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-  <!-- build:css css/style.css-->
   <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="../bower_components/bootstrap-grid-only/css/grid12.css">
   <link rel="stylesheet" href="../bower_components/fancybox/source/jquery.fancybox.css">
   <link rel="stylesheet" href="../bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css">
   <link rel="stylesheet" href="../bower_components/aos/dist/aos.css">
-  <link rel="stylesheet" href="./js/jquery-ui-1.11.4.custom/jquery-ui.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- endbuild -->
+  <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css">
+
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/mobile-landscape.css">
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="stylesheet" href="./css/notebook.css">
+  <link rel="stylesheet" href="./css/largescreen.css">
+  <link rel="stylesheet" href="./css/ranges.css">
+
+  <link rel="stylesheet" href="./chunks/menu/menu.css">
+  <link rel="stylesheet" href="./chunks/nsearch/nsearch.css">
+  <link rel="stylesheet" href="./chunks/directions/directions.css">
   
 </head>
-<body class="mlayout">
-  <aside class="mlayout__side">
 
+<body class="mlayout">
+  
+  <aside class="mlayout__side">
     <ul class="mmenu">
       <li class="mmenu__item"><a href="#" class="mmenu__link">Главная</a></li>
       <li class="mmenu__item mmenu__item_active ">
@@ -79,9 +87,8 @@
   <div class="mlayout__curtain" id="mlayout__curtain"></div>
 
   <div class="mlayout__wrapper content">
-    
     <div class="content__top">
-      
+
       <header class="mheader visible-xs">
         <div class="mheader__title">ГБУЗ «ГКБ № 4» г. Оренбурга</div>
         <div class="mheader__toggle" id="mlayout__toggle">
@@ -91,7 +98,6 @@
         </div>
         <a href="#" class="mheader__logo"></a>
       </header>
-
       <header class="header">
         <div class="container">
           <div class="col-sm-4 header__logo">
@@ -110,7 +116,6 @@
           </div>
         </div>
       </header>
-
       <nav class="nav hidden-xs">
         <div class="container">
           <ul class="menu">
@@ -146,7 +151,7 @@
             <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Для пациента</a></li>
             <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Контакты</a></li>
           </ul>
-
+      
           <form action="http://yandex.ru/search/" class="nsearch" id="nsearch">
             <div class="nsearch__inner" id="nsearch__inner">
               <div class="nsearch__toggle" id="nsearch__toggle"></div>
@@ -163,18 +168,15 @@
         <div class="container">
           <div class="row">
             <section class="col-sm-12 main__content">
-              
-              <!--
-              <div class="box box_style_attention">
-                <div class="box__content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae consequuntur omnis magni molestias ipsam assumenda, quia corporis porro magnam repellat dolores repellendus reiciendis, nam facere iure atque beatae officiis pariatur.
-                </div>
-              </div>
-              -->
-
               <div class="box">
-                <div class="box__header">Наши направления</div>
-                <div class="box__content">                    
+                <div class="box__content">
+                  <ul class="bcrum">
+                    <li class="bcrum__item"><a href="">Главная</a></li>
+                    <li class="bcrum__item"><a href="">О больнице</a></li>
+                    <li class="bcrum__item"><span>Общие сведения</span></li>
+                  </ul>
+                  <h1>Наши направления</h1>
+                                  
                   <ul class="list list_type_thumb">
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
@@ -202,7 +204,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -229,7 +231,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -256,7 +258,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -276,7 +278,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -301,7 +303,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -324,7 +326,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -348,7 +350,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -371,7 +373,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -396,7 +398,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -423,7 +425,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -449,7 +451,7 @@
                         </div>
                       </div>
                     </li>
-
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -469,7 +471,7 @@
                         </div>
                       </div>
                     </li>
-                    
+                  
                     <li class="list__item" data-aos="fade-up" >
                       <div class="list-thumb">
                         <div class="row">
@@ -501,8 +503,9 @@
                         </div>
                       </div>
                     </li>
-
+                  
                   </ul>
+                  
                 </div>
               </div>
             </section>
@@ -518,18 +521,15 @@
       </div>
     </footer>
   </div>
-
-  <!-- build:js js/script.js -->
   <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../bower_components/swiper/dist/js/swiper.jquery.js"></script>
   <script src="../bower_components/fancybox/source/jquery.fancybox.js"></script>
   <script src="../bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+  <script src="../bower_components/swiper/dist/js/swiper.jquery.js"></script>
   <script src="../bower_components/aos/dist/aos.js"></script>
-  <script src="js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
-  <script src="js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
-  <script src="js/app.js"></script>
-  <!-- endbuild -->
-
+  <script src="./js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+  <script src="./js/jquery-ui-1.11.4.custom/datepicker-ru.js"></script>
+  <script src="./chunks/directions/directions.js"></script>
+  <script src="./js/app.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?onload=App.Fn.map&lang=ru_RU" type="text/javascript"></script>
 </body>
 </html>
