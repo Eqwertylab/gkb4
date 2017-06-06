@@ -1,0 +1,109 @@
+.contab__head
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contab__desc
+{
+  margin: 0;
+  list-style-type: none;
+}
+
+.contab__title
+{
+  margin-bottom: 10px;
+
+}
+
+.contab__link
+{
+  text-decoration: none;
+  border-bottom: 1px dotted #0071c8;
+  font-weight: 600;
+}
+
+.contab__link.contab__link_active
+{
+  border-color: transparent;
+}
+
+.contab__body
+{
+  margin-top: 1rem;
+}
+
+.contab__address,
+.contab__bus,
+.contab__phone,
+.contab__clock,
+.contab__user
+{
+  padding-left: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: left top;
+  min-height: 1.8125rem;
+  margin-bottom: 1rem;
+}
+
+.contab__address
+{
+  background-image: url(./img/ico-address.png);
+  background-size: 1.25rem auto;
+}
+
+.contab__bus
+{
+  background-image: url(./img/ico-bus.png);
+  background-size: 1.625rem auto;
+}
+
+.contab__bus-item + .contab__bus-item
+{
+  border-top: 1px solid #e8e8e8;
+  padding-top: 0.75rem;
+}
+
+.contab__phone
+{
+  background-image: url(./img/ico-phone.png);
+  background-size: 1.625rem auto;
+}
+
+.contab__clock
+{
+  background-image: url(./img/ico-clock.png);
+  background-size: 1.625rem auto;
+}
+
+.contab__user
+{
+  background-image: url(./img/ico-user.png);
+  background-size: 1.625rem auto;
+}
+
+.contab__map
+{
+  height: 23rem;
+}
+
+.contab__item
+{
+  display: none;
+}
+
+.contab__item_active
+{
+  display: block;
+}
+
+@media (min-width: 768px)
+{
+  .contab__title
+  {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 15px 0 0;
+  }
+}

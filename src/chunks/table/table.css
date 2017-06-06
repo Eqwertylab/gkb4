@@ -1,0 +1,193 @@
+.table
+{
+  margin: 0 -1.25rem;
+  overflow-x: auto;
+}
+
+/* В нумерованном списке */
+
+.table_num_list
+{
+  margin: 1rem -1.25rem 0 -6.25rem;
+}
+
+/* Телефоны на стр. "Контакты" */
+
+.table_phones .table__td:nth-child(2)
+{
+  white-space: nowrap;
+}
+
+/* Inner contab__item */
+
+.table_contact
+{
+  margin: 0 -0.5rem;
+}
+
+.table_contact .table__td:nth-child(2)
+{
+  white-space: nowrap;
+}
+
+.table_contact .table__item
+{
+  background: transparent;
+}
+
+.table_contact .table__td
+{
+  padding: 0.5rem !important;
+}
+
+.table__item
+{
+  width: 100%;
+  background: inherit;
+}
+
+.table__th
+{
+  font-weight: 400;
+  border-bottom: 3px solid #bababa;
+  padding: 0.875rem;
+  border-right: 1px solid #e8e8e8;
+}
+
+.table__td
+{
+  padding: 0.875rem;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.table__tr:last-child .table__td
+{
+  border-bottom: none;
+}
+
+.table__th:last-child,
+.table__td:last-child
+{
+  border-right: none;
+  padding-right: 1.25rem;
+}
+
+.table__th:first-child,
+.table__td:first-child
+{
+  padding-left: 1.25rem;
+}
+
+/*
+ * Таблица альтернативный синтаксис
+ */
+
+.table__item-alternative
+{
+  width: 100%;
+  background: inherit;
+}
+
+.table__item-alternative th
+{
+  font-weight: 400;
+  border-bottom: 3px solid #bababa;
+  padding: 0.875rem;
+  border-right: 1px solid #e8e8e8;
+}
+
+.table__item-alternative td
+{
+  padding: 0.875rem;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.table__item-alternative tr:last-child td
+{
+  border-bottom: none;
+}
+
+.table__item-alternative th:last-child,
+.table__item-alternative td:last-child
+{
+  border-right: none;
+  padding-right: 1.25rem;
+}
+
+.table__item-alternative th:first-child,
+.table__item-alternative td:first-child
+{
+  padding-left: 1.25rem;
+}
+
+/*
+* Таблица "Популярные услуги" на главной странице
+*/
+
+.table_popular-col_2
+{
+  border-top: 1px solid #e8e8e8;
+}
+
+@media (min-width: 768px)
+{
+.table_popular-col_1
+  {
+    margin-right: 0;
+  }
+
+  .table_popular-col_2
+  {
+    border-top: 0;
+    margin-left: 0;
+  }
+
+  [class*="table_popular-col"] table
+  {
+    table-layout: fixed;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  [class*="table_popular-col"] td
+  {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  [class*="table_popular-col"] td:first-child
+  {
+    width: 80%;
+    position: relative;
+  }
+
+  [class*="table_popular-col"] td:first-child:before
+  {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    background: linear-gradient(to right, transparent 0%, #fff 75%);
+  }
+
+  [class*="table_popular-col"] td:last-child
+  {
+    width: 20%;
+  }
+}
+
+@media (min-width: 992px)
+{
+  /* В нумерованном списке */
+
+  .table_num_list
+  {
+    margin: 0;
+  }
+}

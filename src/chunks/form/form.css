@@ -1,0 +1,73 @@
+select.form__control,
+input.form__control,
+textarea.form__control
+{
+  width: 100%;
+
+  color: #6a8294;
+  border: 1px solid #cbcbcb;
+  outline: none;
+  font-size: 1rem;
+  display: block;
+}
+
+select.form__control,
+input.form__control
+{
+  line-height: 2.375rem;
+
+  height: 2.8125rem;
+  padding: 0 0.9375rem;
+}
+
+textarea.form__control
+{
+  resize: none;
+  height: 100px;
+  padding: 0.9375rem;
+}
+
+input.form__control_error,
+textarea.form__control_error
+{
+  border-color: #ff0000 !important;
+  background: #fff2f2;
+}
+
+.form_gorizontal .form__error,
+.form_gorizontal .form__label
+{
+  line-height: 2rem;
+  display: block;
+  white-space: nowrap;
+}
+
+.form_gorizontal .form__error
+{
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.form__error
+{
+  color: #ff0000;
+}
+
+.form__row
+{
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px)
+{
+  .form_gorizontal .form__label
+  {
+    text-align: right;
+  }
+
+  .form_gorizontal .form__error,
+  .form_gorizontal .form__label
+  {
+    line-height: 2.8125rem;
+  }
+}

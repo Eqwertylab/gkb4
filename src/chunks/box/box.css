@@ -1,0 +1,49 @@
+.box
+{
+  border: 1px solid #d4dee6;
+  box-shadow: -4px 4px 5px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+  background: #ffffff;
+}
+
+.box__row
+{
+  margin: 0 -1.25rem;
+  padding: 0 1.25rem;
+}
+
+.box_style_attention
+{
+  border-color: #ff0000;
+  background-color: #feefef;
+  font-weight: 600;
+  border-width: 3px;
+}
+
+.box__header
+{
+  padding: 1.25rem;
+  font-size: 1.625rem;
+  background-color: #ede1c7;
+}
+
+.box__content
+{
+  padding: 1.25rem;
+}
+
+.box__content p
+{
+  margin-top: 0;
+}
+
+.box__tool
+{
+  margin-top: 1rem;
+}
+
+.box__description
+{
+  border-top: 1px solid #e8e8e8;
+  padding-top: 15px;
+}

@@ -1,0 +1,120 @@
+.license
+{
+  text-align: center;
+}
+
+.license + .license
+{
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #d4dee6;
+}
+
+a.license__inner
+{
+  display: block;
+  border: 2rem solid #ede1c7;
+  border-bottom: 1rem solid #ede1c7;
+  background-color: #ede1c7;
+  max-width: 400px;
+  margin: 0 auto 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+a.license__inner:hover 
+{
+  color: #000;
+}
+
+.license__title
+{
+  display: block;
+  text-align: center;
+  display: block;
+  border: 0.3125rem solid;
+  border-top-color: #c6c6c6;
+  border-right-color: #bdbdbd;
+  border-left-color: #bababa;
+  border-bottom-color: #a2a2a2;
+  background: #e5e5e5;
+  padding: 0.625rem;
+  width: 90%;
+  margin: 1rem auto 0;
+  font-size: 0.8125rem;
+  position: relative;
+  box-shadow: -1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.license__image
+{
+  width: 100%;
+}
+
+.license__image-shadow
+{
+  display: block;
+  font-size: 0;
+  position: relative;
+  z-index: 80;
+  border: 0.75rem solid;
+  border-top-color: #c5b591;
+  border-right-color: #ccbc9a;
+  border-left-color: #d6c7a7;
+  border-bottom-color: #dfd2b5;
+  overflow: hidden;
+}
+
+.license__image-shadow:after
+{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: inset -1px 2px 8px rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.license__image-shadow:before
+{
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  transition: background 0.3s ease-in;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 0 0;
+  background-image: url(./img/zoom.png);
+}
+
+.license__inner:hover .license__image-shadow:before
+{
+  background-color: rgba(0,124,220,0.2);
+  background-size: 6.8125rem 6.8125rem;
+}
+
+.license__download
+{
+  display: inline-block;
+  padding-left: 1.6875rem;
+  background-repeat: no-repeat;
+  background-position: left 2px;
+  background-size: 1.0625rem;
+  background-image: url(./img/list-download.png);
+}
+
+@media (min-width: 768px)
+{
+  a.license__inner
+  {
+    width: 80%;
+  }
+}

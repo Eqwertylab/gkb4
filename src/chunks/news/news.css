@@ -1,0 +1,43 @@
+.news
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news__item + .news__item
+{
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #d4dee6;
+}
+
+.news__title
+{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.news__date
+{
+  color: #8a8a8a;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.news__footer
+{
+  margin-top: 0.5rem;
+}
+
+.news__content,
+.news__content:before,
+.news__content:after
+{
+  content: " ";
+  display: table;
+}
+.news__content:after
+{
+  clear: both;
+}

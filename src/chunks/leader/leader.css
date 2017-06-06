@@ -1,0 +1,23 @@
+.leader + .leader
+{
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #d4dee6;
+}
+
+.leader__name
+{
+  font-size: 1.25rem;
+}
+
+.leader__info
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.leader__info-item
+{
+  margin-bottom: 0.625rem;
+}

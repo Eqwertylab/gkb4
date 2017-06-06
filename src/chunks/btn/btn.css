@@ -1,0 +1,47 @@
+.btn,
+a.btn
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 8px 18px;
+  height: 38px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  background: #007cdc;
+  outline: none;
+  box-shadow: -2px 2px 3px rgba(0,0,0,0.25);
+}
+
+.btn:hover
+{
+  background: #006cc0;
+}
+
+a.btn_arrow,
+.btn_arrow
+{
+  position: relative;
+  padding: 8px 14px 8px 18px;
+}
+
+.btn_arrow:after
+{
+  content: "";
+  top: 0;
+  right: -19px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-bottom: 19px solid transparent;
+  border-left: 19px solid #007cdc;
+}
+
+.btn_arrow:hover:after
+{
+  border-left: 19px solid #006cc0;
+}

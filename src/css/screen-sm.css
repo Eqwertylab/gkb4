@@ -1,0 +1,64 @@
+@media (min-width: 768px)
+{
+
+  /*
+   * Общие
+   */
+
+  .content__top 
+  {
+    min-height: 100%;
+    padding-bottom: 140px;
+  }
+
+  .content__footer
+  {
+    margin-top: -140px;
+    height: 140px;
+  }
+
+  .main__content,
+  .main__sidebar
+  {
+    padding: 0 15px;
+  }
+
+  /*
+   * Модальное окно
+   */
+
+  .modal
+  {
+    width: 380px;
+  }
+
+  .modal_close
+  {
+    top: 0px;
+    right: -25px;
+  }
+
+  .modal_inner
+  {
+    padding: 15px 25px;
+  }
+
+  .modal.__video .modal_inner
+  {
+    padding: 15px;
+  }
+
+  /*
+   * Основной контент
+   */
+
+  .main__content
+  {
+    float: right;
+  }
+
+  .main__sidebar
+  {
+    float: left;
+  }
+}

@@ -1,47 +1,6 @@
 <nav class="nav hidden-xs">
   <div class="container">
-    <ul class="menu">
-      <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Главная</a></li>
-      <li class="menu__item menu__item_level-1 menu__item_active ">
-        <a href="" class="menu__link">О больнице</a>
-        <ul class="menu__inner">
-          <li class="menu__item"><a href="#" class="menu__link">Общая информация</a></li>
-          <li class="menu__item menu__item_active"><a href="ya.ru" class="menu__link">Руководство</a></li>
-          <li class="menu__item"><a href="https://ru.bem.info/method/naming-convention/#Имя-модификатора" class="menu__link">Структура больницы</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Новости больницы</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Фотогалерея</a></li>
-          <li class="menu__item menu__item_level-2 ">
-            <a href="#" class="menu__link">Видеогалерея</a>
-            <ul class="menu__inner">
-              <li class="menu__item"><a href="#" class="menu__link">Общая информация</a></li>
-              <li class="menu__item"><a href="ya.ru" class="menu__link">Руководство</a></li>
-              <li class="menu__item"><a href="https://ru.bem.info/method/naming-convention/#Имя-модификатора" class="menu__link">Структура больницы</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Новости больницы</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Фотогалерея</a></li>
-            </ul>
-          </li>
-          <li class="menu__item"><a href="#" class="menu__link">Документы</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Лицензии</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Вакансии</a></li>
-        </ul>
-      </li>
-      <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Услуги</a></li>
-      <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">ОМС</a></li>
-      <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Запись на прием</a></li>
-      <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Для пациента</a></li>
-      <li class="menu__item menu__item_level-1"><a href="#" class="menu__link">Контакты</a></li>
-    </ul>
-
-    <form action="http://yandex.ru/search/" class="nsearch" id="nsearch">
-      <div class="nsearch__inner" id="nsearch__inner">
-        <div class="nsearch__toggle" id="nsearch__toggle"></div>
-        <button class="nsearch__submit" id="nsearch__submit" type="submit"></button>
-        <div class="nsearch__field" id="nsearch__field">
-          <input type="text" class="nsearch__input" placeholder="Введите запрос и нажмите Enter" id="nsearch__input" name="text">
-        </div>
-      </div>
-    </form>
+    {{> menu}}
+    {{> nsearch}}
   </div>
 </nav>

@@ -1,0 +1,213 @@
+/*
+ * Общие
+ */
+
+html 
+{
+  font-size: 80%;
+}
+
+html,
+body
+{
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+html.open
+{
+  overflow-y: hidden; 
+}
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  position: relative;
+  color: #242424;
+  background-color: #5f6162;
+}
+
+a
+{
+  color: #0071c8;
+}
+
+a:visited
+{
+  color: #2c91de;
+}
+
+a:hover,
+a:active
+{
+  color: #015ca2;
+}
+
+h1,h2,h3
+{
+  font-weight: 300;
+}
+
+img
+{
+  width: 100%;
+  max-width: 100%;
+}
+
+p
+{
+  margin-bottom: 1rem;
+}
+
+button, input, select
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.open .mlayout
+{
+  overflow-y: hidden;
+}
+
+.content__top 
+{
+  padding-bottom: 20px;
+}
+
+.content__footer
+{
+  padding: 25px;
+}
+
+.mlayout__wrapper
+{
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.main__content,
+.main__sidebar
+{
+  padding: 0 5px;
+}
+
+.open .mlayout__wrapper
+{
+  left: 260px;
+  overflow-y: hidden;
+}
+
+.center-block
+{
+  float: none;
+}
+
+.price
+{
+  white-space: nowrap;
+}
+
+/*
+ * Мобильный сайдбар
+ */
+
+.mlayout__side
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -260px;
+  overflow-y: auto;
+  width: 260px;
+  background: #eadbbb;
+  z-index: 4000;
+}
+
+.open .mlayout__side
+{
+  left: 0;
+}
+
+.mlayout__curtain
+{
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 260px;
+  display: none;
+  background-color: rgba(0,0,0,.5);
+}
+
+.open .mlayout__curtain
+{
+  display: block;
+}
+
+/*
+ * Основной контент
+ */
+
+.main
+{
+  position: relative;
+  z-index: 100;
+  padding-bottom: 2rem;
+  background: #f4f4f4;
+}
+
+/*
+ * Меню контента страницы
+ */
+
+.page-menu
+{
+  margin-bottom: 1.25rem;
+}
+
+/*
+ * Изображения
+ */
+
+.img-center
+{
+  display: block;
+  margin: auto;
+}
+
+/*
+ * Видео
+ */
+
+.video-js 
+{
+  padding-top: 56.25%
+}
+
+.vjs-fullscreen {
+  padding-top: 0px
+}
+
+/*
+ * Календарь
+ */
+
+.ui-widget {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+}
+.ui-widget .ui-widget {
+  font-size: 1rem;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
