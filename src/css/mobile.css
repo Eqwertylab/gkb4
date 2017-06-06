@@ -51,6 +51,12 @@ h2,h1
   font-weight: 300;
 }
 
+img
+{
+  width: 100%;
+  max-width: 100%;
+}
+
 .open .mlayout
 {
   overflow-y: hidden;
@@ -117,16 +123,6 @@ button, input, select
 /*
  * Изображения
  */
-
-.img-responsive
-{
-  max-width: 100%;
-}
-
-.img-wide
-{
-  width: 100%;
-}
 
 .img-center
 {
@@ -391,112 +387,6 @@ a.mmenu__link
 
   background: url(../img/logo-mobile.png) no-repeat left top;
 }
-
-/*
-* Заголовок
-*/
-
-.header
-{
-  background: #f4f4f4 url(../img/background-top-blur.jpg) no-repeat center top;
-  padding-bottom: 25px;
-}
-
-.header__logo
-{
-  padding-top: 65px;
-}
-
-.header__tel
-{
-  padding: 25px 0 15px;
-  text-align: center;
-}
-
-.header__order
-{
-  text-align: center;
-}
-
-.header-logo
-{
-  width: 214px;
-  height: 195px;
-  background: url(../img/logo.png) no-repeat center center;
-  display: block;
-  margin: auto;
-}
-
-.header-tel
-{
-  font-size: 18px;
-  text-align: center;
-  display: inline-block;
-  background: url(../img/tel.png) no-repeat left center / 45px 45px;
-  padding: 0 0 10px 55px;
-  height: 45px;
-}
-
-.header-tel__desc
-{
-  font-size: 13px;
-  color: #5c5c5c;
-}
-
-.header-order
-{
-  font-size: 1rem;
-  padding: 8px 138px 8px 18px;
-  cursor: pointer;
-  color: #fff;
-  border: none;
-  background: #007cdc;
-  outline: none;
-  box-shadow: -2px 2px 3px rgba(0,0,0,0.25);
-  position: relative;
-  margin-top: 50px;
-}
-
-.header-order:before
-{
-  content: "";
-  display: block;
-  position: absolute;
-  width: 110px;
-  height: 103px;
-  background: url(../img/doc.png) no-repeat 0 0 / 110px 103px;
-  bottom: 0;
-  right: 10px;
-}
-
-.header-order:hover
-{
-  background: #006cc0;
-}
-
-/*
- * Футер
- */
-
-.footer
-{
-  background-color: #5f6162;
-  color: #ffffff;
-  text-align: center;
-  padding: 2.1875rem 0;
-}
-
-.footer__title
-{
-  margin-bottom: 15px;
-}
-
-.footer__description
-{
-  font-size: 0.875rem;
-}
-
-
 
 /*
  * Основной контент
@@ -1353,49 +1243,6 @@ a.license__inner:hover
   border-color: #db0000;
 }
 
-
-
-/*
- * Хлебные крошки
- */
-
-.bcrum
-{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: #aeaeae;
-}
-
-.bcrum__item
-{
-  display: inline;
-  vertical-align: top;
-}
-
-.bcrum__item + .bcrum__item:before
-{
-  content: "";
-  display: inline-block;
-  vertical-align: -0.05rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url(../img/bcrum-arrow.png);
-  background-size: 1.375rem;
-  width: 1.5rem;
-  margin: 0px 6px;
-  height: 1rem;
-}
-
-.bcrum a, 
-.bcrum span 
-{
-  color: #aeaeae;
-}
-
 /*
  * Меню контента страницы
  */
@@ -1833,20 +1680,3 @@ a.btn_arrow,
   border-left: 19px solid #006cc0;
 }
 
-@media only screen and (min-resolution: 144dpi)
-{
-
-  /*
-  * Заголовок
-  */
-
-  .header-tel
-  {
-    background-image: url(../img/tel@2x.png);
-  }
-
-  .header-order:before
-  {
-    background-image: url(../img/doc@2x.png);
-  }
-}

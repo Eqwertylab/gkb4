@@ -1,0 +1,36 @@
+.bcrum
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #aeaeae;
+}
+
+.bcrum__item
+{
+  display: inline;
+  vertical-align: top;
+}
+
+.bcrum__item + .bcrum__item:before
+{
+  content: "";
+  display: inline-block;
+  vertical-align: -0.05rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(./img/bcrum-arrow.png);
+  background-size: 1.375rem;
+  width: 1.5rem;
+  margin: 0px 6px;
+  height: 1rem;
+}
+
+.bcrum a, 
+.bcrum span 
+{
+  color: #aeaeae;
+}
