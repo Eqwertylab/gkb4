@@ -1,0 +1,14 @@
+.ui-widget {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+}
+.ui-widget .ui-widget {
+  font-size: 1rem;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
