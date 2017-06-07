@@ -2,7 +2,7 @@
  * Общие
  */
 
-html 
+html
 {
   font-size: 80%;
 }
@@ -16,7 +16,7 @@ body
 
 html.open
 {
-  overflow-y: hidden; 
+  overflow-y: hidden;
 }
 
 body
@@ -31,17 +31,6 @@ body
 a
 {
   color: #0071c8;
-}
-
-a:visited
-{
-  color: #2c91de;
-}
-
-a:hover,
-a:active
-{
-  color: #015ca2;
 }
 
 h1,h2,h3
@@ -71,7 +60,7 @@ button, input, select
   overflow-y: hidden;
 }
 
-.content__top 
+.content__top
 {
   padding-bottom: 20px;
 }
@@ -184,7 +173,7 @@ button, input, select
  * Видео
  */
 
-.video-js 
+.video-js
 {
   padding-top: 56.25%
 }

@@ -1,0 +1,161 @@
+.specview-panel
+{
+  background: rgb(243, 243, 243);
+  display: none;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.specview-panel__item
+{
+  padding: 0 15px;
+}
+
+.specview-panel__item_size,
+.specview-panel__item_color
+{
+  display: none;
+}
+
+.specview .specview-panel__item_size,
+.specview .specview-panel__item_color
+{
+  display: block;
+}
+
+/*
+* Toggle
+*/
+
+.specview-panel-toggle__item
+{
+  text-decoration: none;
+  color: #000;
+}
+
+.specview-panel-toggle__item[data-view="default"]
+{
+  display: none;
+}
+
+.specview .specview-panel-toggle__item[data-view="default"]
+{
+  display: block;
+}
+
+.specview .specview-panel-toggle__item[data-view="specview"]
+{
+  display: none;
+}
+
+/*
+* Size
+*/
+
+.specview-panel-size
+{
+  display: flex;
+  align-items: center;
+}
+
+.specview-panel-size__item
+{
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 4px;
+  line-height: 1;
+  padding: 3px 5px;
+  margin: 0 3px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.specview-panel-size__item_active
+{
+  color: #fff;
+  background: rgb(77, 77, 77);
+}
+
+.specview-panel-size__item_sm
+{
+  font-size: 1em;
+}
+
+.specview-panel-size__item_md
+{
+  font-size: 1.4em;
+}
+
+.specview-panel-size__item_lg
+{
+  font-size: 1.8em;
+}
+
+/*
+* Color
+*/
+
+.specview-panel-color
+{
+  display: flex;
+  align-items: center;
+}
+
+.specview-panel-color__item
+{
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 4px;
+  line-height: 1;
+  padding: 7px 7px;
+  margin: 0 3px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.specview-panel-color__item_active
+{
+  border-width: 3px;
+}
+
+.specview-panel-color__item_bw
+{
+  background: #fff;
+  color: #000;
+}
+
+.specview-panel-color__item_wb
+{
+  background: #000;
+  color: #fff;
+}
+
+.specview-panel-color__item_b
+{
+  background: #9df;
+  color: #136;
+}
+
+@media only screen and (min-resolution: 144dpi)
+{
+}
+
+@media (min-width: 480px)
+{
+}
+
+@media (min-width: 768px)
+{
+}
+
+@media (min-width: 992px)
+{
+  .specview-panel
+  {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px)
+{
+}
