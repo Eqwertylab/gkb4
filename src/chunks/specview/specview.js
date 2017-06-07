@@ -1,5 +1,16 @@
 (function($){
 
+var cookieConfig = {expires: 365};
+
+//
+// Init
+//
+
+if(Cookies.get('specviewActive'))
+{
+  initSpecview();
+}
+
 //
 // Handlers
 //
@@ -15,20 +26,29 @@ $('.specview-panel-color__item').on('click', toggleColor);
 function toggleSpecview(e)
 {
   e.preventDefault();
-  var config = {'size' : 'sm', 'color' : 'bw'};
 
   if($('html').hasClass('specview'))
   {
     resetSize();
     resetColor();
+    Cookies.remove('specviewActive');
+    $('html').removeClass('specview');
   }
   else
   {
-    setSize(config.size);
-    setColor(config.color);
+    initSpecview();
   }
+}
 
-  $('html').toggleClass('specview');
+function initSpecview()
+{
+  var color = Cookies.get('specviewColor') || 'bw',
+      size  = Cookies.get('specviewSize') || 'sm';
+
+  setColor(color);
+  setSize(size);
+  Cookies.set('specviewActive', true, cookieConfig);
+  $('html').addClass('specview');
 }
 
 /* Size */
@@ -44,7 +64,7 @@ function setSize(current)
   resetSize();
   $('html').addClass('specview_size_' + current);
   $('.specview-panel-size__item_' + current).addClass('specview-panel-size__item_active');
-  Cookies.set('specviewSize', current, {expires: 365});
+  Cookies.set('specviewSize', current, cookieConfig);
 }
 
 function resetSize()
@@ -57,6 +77,7 @@ function resetSize()
   });
 
   $('.specview-panel-size__item').removeClass('specview-panel-size__item_active');
+  Cookies.remove('specviewSize');
 }
 
 /* Color */
@@ -72,7 +93,7 @@ function setColor(current)
   resetColor();
   $('html').addClass('specview_color_' + current);
   $('.specview-panel-color__item_' + current).addClass('specview-panel-color__item_active');
-  Cookies.set('specviewColor', current, {expires: 365});
+  Cookies.set('specviewColor', current, cookieConfig);
 }
 
 function resetColor()
@@ -85,6 +106,7 @@ function resetColor()
   });
 
   $('.specview-panel-color__item').removeClass('specview-panel-color__item_active');
+  Cookies.remove('specviewColor');
 }
 
 })(jQuery);
