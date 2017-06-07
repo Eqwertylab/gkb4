@@ -1,9 +1,10 @@
 .specview-panel
 {
-  background: rgb(243, 243, 243);
+  background: #f2f2f2;
   display: none;
   padding: 5px 15px;
   align-items: center;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .specview-panel__item

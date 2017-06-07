@@ -1,0 +1,32 @@
+.specview_color_bw .header-logo
+{
+  background-image: url(./img/logo_specview_bw.png);
+}
+
+.specview_color_wb .header-logo
+{
+  background-image: url(./img/logo_specview_wb.png);
+}
+
+.specview_color_b .header-logo
+{
+  background-image: url(./img/logo_specview_b.png);
+}
+
+@media only screen and (min-resolution: 144dpi)
+{
+  .specview_color_bw .header-logo
+  {
+    background-image: url(./img/logo_specview_bw@2x.png);
+  }
+
+  .specview_color_wb .header-logo
+  {
+    background-image: url(./img/logo_specview_wb@2x.png);
+  }
+
+  .specview_color_b .header-logo
+  {
+    background-image: url(./img/logo_specview_b@2x.png);
+  }
+}
