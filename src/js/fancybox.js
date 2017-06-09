@@ -1,11 +1,11 @@
-(function(){
+(function($){
 
   $(".fancybox").fancybox({
     closeBtn : false,
-    helpers : 
+    helpers :
     {
-      title : 
-      { 
+      title :
+      {
         type : 'inside'
       },
       buttons : {}

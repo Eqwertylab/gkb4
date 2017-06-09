@@ -1,0 +1,23 @@
+/* BW */
+
+.specview_color_bw .menu__item:hover > .menu__link
+{
+  color: #fff;
+  background-color: #000;
+}
+
+/* WB */
+
+.specview_color_wb .menu__item:hover > .menu__link
+{
+  color: #000;
+  background-color: #fff;
+}
+
+/* B */
+
+.specview_color_b .menu__item:hover > .menu__link
+{
+  background-color: #063462;
+  color: #9dd1ff;
+}

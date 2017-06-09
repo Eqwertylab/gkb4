@@ -1,3 +1,26 @@
+/*
+* Запись на прием
+*/
+
+.specview .header-order
+{
+  padding: 15px 20px;
+}
+
+.specview .header-order:before
+{
+  display: none;
+}
+
+.specview .header-order br
+{
+  display: none;
+}
+
+/*
+* Логотип
+*/
+
 .specview_color_bw .header-logo
 {
   background-image: url(./img/logo_specview_bw.png);
@@ -15,6 +38,10 @@
 
 @media only screen and (min-resolution: 144dpi)
 {
+  /*
+  * Логотип
+  */
+
   .specview_color_bw .header-logo
   {
     background-image: url(./img/logo_specview_bw@2x.png);

@@ -2,9 +2,8 @@
 * Скрываем фоновые картинки
 */
 
-.specview
+.specview *
 {
-  font-weight: 400;
   box-shadow: none;
 }
 

@@ -1,3 +1,5 @@
+@import './directions-specview.css';
+
 .box_directions .box__content
 {
   position: relative;
@@ -93,7 +95,7 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 }
 
-.direction__link > a 
+.direction__link > a
 {
   display: block;
 }
@@ -125,12 +127,12 @@
 .direction__link h3 > a
 {
   text-decoration: none;
-} 
+}
 
 .direction__link h3 > a:hover
 {
   border-bottom: 1px solid rgba(1, 92, 162, 0.6);
-} 
+}
 
 .direction__desc
 {

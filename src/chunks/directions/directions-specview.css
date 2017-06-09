@@ -1,0 +1,21 @@
+.specview .directions
+{
+  height: 100%;
+  overflow: visible;
+}
+
+.specview .directions-toggle
+{
+  display: none;
+}
+
+.specview .direction,
+.specview .direction__link
+{
+  height: 100%;
+}
+
+.specview .direction__link h3
+{
+  font-weight: 400;
+}

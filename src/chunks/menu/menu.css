@@ -1,3 +1,5 @@
+@import './menu-specview.css';
+
 .nav
 {
   background-color: #eadbbb;
@@ -57,17 +59,9 @@ a.menu__link
   right: 0.8rem;
   top: 50%;
   margin-top: -0.3125rem;
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
   transform: rotate(90deg);
 
   transition: top 0.3s, right 0.3s;
-  -moz-transition: top 0.3s, right 0.3s;
-  -ms-transition: top 0.3s, right 0.3s;
-  -webkit-transition: top 0.3s, right 0.3s;
-  -o-transition: top 0.3s, right 0.3s;
 }
 
 .menu__item_container:hover > .menu__link:before
@@ -78,10 +72,6 @@ a.menu__link
 .menu__inner > .menu__item_container > .menu__link:before
 {
   margin-top: -0.5rem;
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
@@ -184,7 +174,7 @@ a.menu__link
   .menu__item_container > .menu__link
   {
     padding: 0rem 2.27rem 0 1rem;
-  }  
+  }
 
   .menu__inner > .menu__item_container > .menu__link
   {

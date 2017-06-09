@@ -50,15 +50,16 @@
 .header-order
 {
   font-size: 1rem;
-  padding: 8px 138px 8px 18px;
+  padding: 6px 136px 6px 16px;
   cursor: pointer;
   color: #fff;
-  border: none;
+  border: 1px solid transparent;
   background: #007cdc;
   outline: none;
   box-shadow: -2px 2px 3px rgba(0,0,0,0.25);
   position: relative;
   margin-top: 50px;
+  height: auto;
 }
 
 .header-order:before

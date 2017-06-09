@@ -1,0 +1,20 @@
+.specview [class*="table_popular-col"] td:first-child:before
+{
+  display: none;
+}
+
+.specview [class*="table_popular-col"] td
+{
+  overflow: visible;
+  white-space: normal;
+}
+
+.specview [class*="table_popular-col"]
+{
+  margin: 0 -1.25rem;
+}
+
+.specview .table_popular-col_2
+{
+  border-top-width: 1px;
+}

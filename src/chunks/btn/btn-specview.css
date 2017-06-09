@@ -1,0 +1,33 @@
+.specview .btn
+{
+  height: auto;
+}
+
+.specview .btn_arrow:after
+{
+  display: none;
+}
+
+/* BW */
+
+.specview_color_bw .btn:hover
+{
+  color: #fff;
+  background-color: #000;
+}
+
+/* WB */
+
+.specview_color_wb .btn:hover
+{
+  color: #000;
+  background-color: #fff;
+}
+
+/* B */
+
+.specview_color_b .btn:hover
+{
+  background-color: #063462;
+  color: #9dd1ff;
+}

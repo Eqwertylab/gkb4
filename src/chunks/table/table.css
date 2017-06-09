@@ -1,3 +1,5 @@
+@import './table-specview.css';
+
 .table
 {
   margin: 0 -1.25rem;
@@ -140,7 +142,7 @@
 
   .table_popular-col_2
   {
-    border-top: 0;
+    border-top-width: 0;
     margin-left: 0;
   }
 
