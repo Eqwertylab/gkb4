@@ -12,9 +12,6 @@
   right: 0;
   white-space: nowrap;
   height: 3.51rem;
-  -webkit-transition: background 0.5s;
-  -moz-transition: background 0.5s;
-  -o-transition: background 0.5s;
   transition: background 0.5s;
 }
 
@@ -50,9 +47,6 @@
   vertical-align: middle;
   width: 0;
   overflow: hidden;
-  -webkit-transition: width 0.5s;
-  -moz-transition: width 0.5s;
-  -o-transition: width 0.5s;
   transition: width 0.5s;
 }
 
