@@ -100,6 +100,11 @@
   display: block;
 }
 
+.direction__link a
+{
+  color: #0071c8;
+}
+
 .direction__link img
 {
   display: block;

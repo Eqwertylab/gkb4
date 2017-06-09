@@ -88,6 +88,11 @@
   display:block;
 }
 
+.list__link
+{
+  color: #0071c8;
+}
+
 .list__date
 {
   color: #8a8a8a;
@@ -103,7 +108,7 @@
 
 .list_type_num > .list__item:before
 {
-  content: counter(item); 
+  content: counter(item);
   counter-increment: item;
   display: block;
   width: 4.375rem;
