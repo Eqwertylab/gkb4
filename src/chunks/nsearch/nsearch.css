@@ -3,6 +3,7 @@
   float: right;
   position: relative;
   height: 3.51rem;
+  width: 40px;
 }
 
 .nsearch__inner
@@ -13,6 +14,8 @@
   white-space: nowrap;
   height: 3.51rem;
   transition: background 0.5s;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
 }
 
 .nsearch__submit,
@@ -52,7 +55,7 @@
 
 .nsearch_open .nsearch__inner
 {
-  padding: 0 1.5rem 0 1rem;
+  padding: 0 15px 0 5px;
   background: #ffffff;
 }
 

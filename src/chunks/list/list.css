@@ -169,6 +169,7 @@
   color: #242424;
   padding: 10px;
   background: #e9f2f7;
+  border: 1px solid transparent;
 }
 
 .list-thumb__img

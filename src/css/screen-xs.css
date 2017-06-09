@@ -28,11 +28,6 @@ body
   background-color: #5f6162;
 }
 
-/*a
-{
-  color: #0071c8;
-}*/
-
 h1,h2,h3
 {
   font-weight: 300;
@@ -42,6 +37,7 @@ img
 {
   width: 100%;
   max-width: 100%;
+  height: auto;
 }
 
 p

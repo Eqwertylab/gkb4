@@ -1,3 +1,8 @@
+.specview .menu__inner
+{
+  border: 1px solid transparent;
+}
+
 /* BW */
 
 .specview_color_bw .menu__item:hover > .menu__link

@@ -1,0 +1,11 @@
+.nav > .container:before,
+.nav > .container:after
+{
+  display: none;
+}
+
+.nav .container
+{
+  display: flex;
+  justify-content: space-between;
+}
