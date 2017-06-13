@@ -35,9 +35,10 @@ h1,h2,h3
 
 img
 {
-  width: 100%;
   max-width: 100%;
   height: auto;
+  margin: auto;
+  display: block;
 }
 
 p
@@ -54,16 +55,6 @@ button, input, select
 .open .mlayout
 {
   overflow-y: hidden;
-}
-
-.content__top
-{
-  padding-bottom: 20px;
-}
-
-.content__footer
-{
-  padding: 25px;
 }
 
 .mlayout__wrapper
