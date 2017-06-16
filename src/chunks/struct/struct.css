@@ -1,4 +1,3 @@
-
 .struct
 {
   margin: 0;
@@ -37,12 +36,17 @@
 
 .struct__title
 {
-  display: block;
+  display: inline-block;
   padding: 0.625rem;
   border: 3px solid #ff0000;
   background-color: #ffffff;
   z-index: 1000;
   position: relative;
+}
+
+.struct__title > ul
+{
+  padding-left: 1.45rem;
 }
 
 .struct__capt
@@ -57,7 +61,7 @@
   content: "";
   height: 3px;
   left: -1.6875rem;
-  right: 0;
+  width: 30px;
   top: 50%;
   margin-top: -1.5px;
   background: #ff0000;
@@ -77,6 +81,22 @@
   z-index: 900;
 }
 
+.struct__capt + .struct__capt
+{
+  margin-top: 30px;
+}
+
+.struct__capt + .struct__capt:before
+{
+  content: "";
+  display: block;
+  background: #ff0000;
+  width: 3px;
+  left: 1.3125rem;
+  top: -30px;
+  height: 35px;
+}
+
 .struct__item:last-child > .struct__capt:after
 {
   bottom: 50%;
@@ -84,58 +104,92 @@
 
 /* Уровень 1 */
 
-.struct__item_level_1 > .struct__capt:before,
-.struct__item_level_1 > .struct__capt:after
+.struct_1 > .struct__item > .struct__capt:before,
+.struct_1 > .struct__item > .struct__capt:after
 {
   display: none;
 }
 
+.struct_1 > .struct__item > .struct__capt + .struct__capt:before
+{
+  display: block;
+  background: #ff0000;
+}
+
 /* Уровень 2 */
 
-.struct__item_level_2 > .struct__capt > .struct__title
+.struct_2 > .struct__item > .struct__capt > .struct__title
 {
   border-color: #FFAE00;
 }
 
 /* Уровень 3 */
 
-.struct__item_level_3 > .struct__capt > .struct__title
+.struct_3 > .struct__item > .struct__capt > .struct__title
 {
   border-color: #0BE200;
 }
 
-.struct__item_level_3 > .struct__capt:before,
-.struct__item_level_3 > .struct__capt:after,
-.struct__item_level_3 > .struct:before
+.struct_3 > .struct__item > .struct__capt:before,
+.struct_3 > .struct__item > .struct__capt:after,
+.struct_3 > .struct__item > .struct:before
 {
   background: #FFAE00;
 }
 
 /* Уровень 4 */
 
-.struct__item_level_4 > .struct__capt > .struct__title
+.struct_4 > .struct__item > .struct__capt > .struct__title
 {
   border-color: #1D92FF;
 }
 
-.struct__item_level_4 > .struct__capt:before,
-.struct__item_level_4 > .struct__capt:after,
-.struct__item_level_4 > .struct:before
+.struct_4 > .struct__item > .struct__capt:before,
+.struct_4 > .struct__item > .struct__capt:after,
+.struct_4 > .struct__item > .struct:before
 {
   background: #0BE200;
 }
 
 /* Уровень 5 */
 
-.struct__item_level_5 > .struct__capt > .struct__title
+.struct_5 > .struct__item > .struct__capt > .struct__title
 {
   border-color: #b565ff;
 }
 
-.struct__item_level_5 > .struct__capt:before,
-.struct__item_level_5 > .struct__capt:after,
-.struct__item_level_5 > .struct:before
+.struct_5 > .struct__item > .struct__capt:before,
+.struct_5 > .struct__item > .struct__capt:after,
+.struct_5 > .struct__item > .struct:before
 {
   background: #1D92FF;
+}
+
+/* Уровень 6 */
+
+.struct_6 > .struct__item > .struct__capt > .struct__title
+{
+  border-color: #c1c1c1;
+}
+
+.struct_6 > .struct__item > .struct__capt:before,
+.struct_6 > .struct__item > .struct__capt:after,
+.struct_6 > .struct__item > .struct:before
+{
+  background: #b565ff;
+}
+
+/* Уровень 7 */
+
+.struct_7 > .struct__item > .struct__capt > .struct__title
+{
+  border-color: #c1c1c1;
+}
+
+.struct_7 > .struct__item > .struct__capt:before,
+.struct_7 > .struct__item > .struct__capt:after,
+.struct_7 > .struct__item > .struct:before
+{
+  background: #c1c1c1;
 }
 
