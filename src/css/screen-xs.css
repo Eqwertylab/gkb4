@@ -52,6 +52,11 @@ button, input, select
   font-size: 1rem;
 }
 
+a
+{
+  color: #0071c8;
+}
+
 .open .mlayout
 {
   overflow-y: hidden;
