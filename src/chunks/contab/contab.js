@@ -88,7 +88,7 @@
   function getHash()
   {
     var hash = {},
-        params = location.hash.substring(1).split('&');
+        params = location.hash ? location.hash.substring(1).split('&') : [];
 
     params.forEach(function(el)
     {
@@ -103,6 +103,7 @@
   {
     var list = [],
         hash = getHash();
+
     hash[key] = val;
 
     for(key in hash)
