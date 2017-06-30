@@ -1,60 +1,123 @@
 (function($) {
-  //
-  // Functions
-  //
 
-  window.contab = function() { 
+  if(!$('#map').length) return;
 
-    if( !$('#map').length ) return;
+  window.contab = init;
+  var map;
 
-    var map = setMap();
+  /*
+  * Handlers
+  */
 
-    $('.contab__link').click(function(event) {
+  $('.contab__link').click(changeTab);
 
-      event.preventDefault();
+  /*
+  * Functions
+  */
 
-      if( $(this).hasClass('contab__link_active') )
-        return;
+  function init()
+  {
+    var tab = '#tab-one',
+        hash = getHash();
 
-      $('.contab__item_active').removeClass('contab__item_active');
-      $href = $(this).attr('href');
-      $($href).addClass('contab__item_active');
+    if(hash.tab && $('#' + hash.tab).length)
+    {
+      tab = '#' + hash.tab;
+    }
 
-
-      $('.contab__link_active').removeClass('contab__link_active');
-      $(this).addClass('contab__link_active');
-      map.destroy();
-      map = setMap();
-    });
+    setTab(tab);
   }
 
-  function setMap() {
-    var myMap, 
-        myPlacemark;
+  function changeTab(event)
+  {
+    event.preventDefault();
+    var tab = $(this).attr('href');
+    setTab(tab);
+    setHash('tab', tab.substring(1));
+  }
 
-    var coor = $('.contab__link_active').data('map');
-    var coor_arr = coor.split(',');
+  function setTab(tab)
+  {
+    var $link = $('.contab__link[href="' + tab + '"]'),
+        $content = $(tab);
 
-    var x = coor_arr[0];
-    var y = coor_arr[1];
+    if($link.hasClass('contab__link_active')) return;
 
-    myMap = new ymaps.Map("map", 
-      {
-        center: [x, y],
-        zoom: 16,
-        controls: ["zoomControl", "fullscreenControl"],
-      }
-    ); 
-    myMap.behaviors.disable('scrollZoom');
+    $('.contab__item_active').removeClass('contab__item_active');
+    $('.contab__link_active').removeClass('contab__link_active');
 
-    myPlacemark = new ymaps.Placemark([x, y], {
-        hintContent: $('.contab__link_active').text(),
-        balloonContent: $('.contab__link_active').text()
+    $content.addClass('contab__item_active');
+    $link.addClass('contab__link_active');
+
+    changeMap($link.data('map'));
+  }
+
+  function changeMap(coor)
+  {
+    if(typeof map == 'object') map.destroy();
+    map = setMap(coor);
+  }
+
+  function setMap(coor)
+  {
+    var map,
+        placemark,
+        coor = coor.split(','),
+        x = coor[0],
+        y = coor[1];
+
+    map = new ymaps.Map("map",
+    {
+      center: [x, y],
+      zoom: 16,
+      controls: ["zoomControl", "fullscreenControl"],
     });
 
-    myMap.geoObjects.add(myPlacemark);
+    map.behaviors.disable('scrollZoom');
 
-    return myMap;
+    placemark = new ymaps.Placemark([x, y],
+    {
+      hintContent: $('.contab__link_active').text(),
+      balloonContent: $('.contab__link_active').text()
+    });
+
+    map.geoObjects.add(placemark);
+    return map;
+  }
+
+  function getHash()
+  {
+    var hash = {},
+        params = location.hash.substring(1).split('&');
+
+    params.forEach(function(el)
+    {
+      var item = el.split('=');
+      hash[item[0]] = item[1];
+    });
+
+    return hash;
+  }
+
+  function setHash(key, val)
+  {
+    var list = [],
+        hash = getHash();
+    hash[key] = val;
+
+    for(key in hash)
+    {
+      if(typeof hash[key] == 'undefined')
+      {
+        list.push(key);
+      }
+      else
+      {
+        list.push(key + '=' + hash[key]);
+      }
+    }
+
+    location.hash = "#" + list.join('&');
   }
 
 })(jQuery);
