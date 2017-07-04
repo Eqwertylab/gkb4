@@ -66,19 +66,24 @@
 
 @media (min-width: 768px)
 {
+  .panel
+  {
+    margin: 0 -0.625rem;
+  }
+
+  .panel__item
+  {
+    width: 50%;
+    float: left;
+    padding: 0 0.625rem;
+  }
+}
+
+@media (min-width: 992px)
+{
   .panel__item
   {
     float: left;
-    width: 50%;
-  }
-
-  .panel__item:nth-child(odd)
-  {
-    padding-right: 0.625rem;
-  }
-
-  .panel__item:nth-child(even)
-  {
-    padding-left: 0.625rem;
+    width: 33.33333%;
   }
 }
