@@ -244,11 +244,33 @@
     padding: 0 15px;
     margin-bottom: 1.5rem;
   }
+
+  .list_type_news .list__introtext
+  {
+    overflow: hidden;
+    max-height: 140px;
+    position: relative;
+  }
+
+  .list_type_news .list__introtext:before
+  {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: linear-gradient(to bottom, transparent 0, #fff 90%);
+  }
 }
 
 @media (min-width: 992px)
 {
-
+  .list_type_news .list__item
+  {
+    width: 33.33333%;
+  }
 }
 
 @media (min-width: 1200px)
@@ -262,5 +284,10 @@
   {
     padding-top: 66%;
     background: #e9f2f7 no-repeat center center / cover;
+  }
+
+  .list_type_news .list__introtext
+  {
+    max-height: 170px;
   }
 }
