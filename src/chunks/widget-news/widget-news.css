@@ -18,6 +18,13 @@
   font-weight: 600;
 }
 
+.widget-news__date
+{
+  color: #8a8a8a;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+}
+
 .widget-news__desc
 {
   margin-top: 0.75rem;
