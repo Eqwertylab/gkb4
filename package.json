@@ -20,6 +20,7 @@
     "basisjs-tools-build": "1.9.3",
     "exec": "^0.2.1",
     "gulp": "^3.9.1",
+    "gulp-fontello": "^0.4.6",
     "panini": "^1.4.0"
   }
 }

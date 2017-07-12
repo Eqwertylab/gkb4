@@ -1,6 +1,7 @@
-var gulp = require('gulp');
-var exec = require('child_process').exec;
-var panini = require('panini');
+var gulp = require('gulp'),
+    exec = require('child_process').exec,
+    panini = require('panini'),
+    fontello = require('gulp-fontello');
 
 gulp.task('clean', function(cb)
 {
@@ -8,11 +9,12 @@ gulp.task('clean', function(cb)
   {
     console.log(stdout);
     console.log(stderr);
-    cb(err);
+    // cb(err);
+    cb();
   });
 });
 
-gulp.task('build', ['clean'], function(cb)
+gulp.task('build', ['clean', 'pages', 'glyph'], function(cb)
 {
   exec('node ./node_modules/basisjs-tools-build/bin/build build -p -b . -f ./dist/home.html -o ./build/', function (err, stdout, stderr)
   {
@@ -37,9 +39,17 @@ gulp.task('pages', function()
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('watch', ['pages'], function()
+gulp.task('glyph', function()
+{
+  return gulp.src('./src/glyph/config.json')
+    .pipe(fontello())
+    .pipe(gulp.dest('./dist/font/'));
+});
+
+gulp.task('watch', ['pages', 'glyph'], function()
 {
   gulp.watch(['./src/{chunks,pages,layouts}/**/*.html'], ['pages']);
+  gulp.watch(['./src/glyph/config.json'], ['glyph']);
 });
 
 gulp.task('default', ['build']);

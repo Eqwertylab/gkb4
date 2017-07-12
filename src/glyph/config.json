@@ -1,0 +1,76 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "c5fd349cbd3d23e4ade333789c29c729",
+      "css": "eye",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "289b5f92f23acf1059c93fbf401c1ad5",
+      "css": "down-open-big",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "004882ab2d5c418c5b2060e80596279b",
+      "css": "right-open-big",
+      "code": 59396,
+      "src": "entypo"
+    },
+    {
+      "uid": "b95cfc96d48a72dd665e0ab109880b5e",
+      "css": "clipboard",
+      "code": 59397,
+      "src": "entypo"
+    },
+    {
+      "uid": "693e13611b84512c92e6115e0c31934d",
+      "css": "address-book-o",
+      "code": 62138,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d58dc0a0927a7dea2992f615f2fbf400",
+      "css": "wallet",
+      "code": 59399,
+      "src": "linecons"
+    },
+    {
+      "uid": "41087bc74d4b20b55059c60a33bf4008",
+      "css": "edit",
+      "code": 59400,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2e6301ac94d0d51566727b9199259451",
+      "css": "id-card-o",
+      "code": 62147,
+      "src": "fontawesome"
+    }
+  ]
+}

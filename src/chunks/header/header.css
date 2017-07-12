@@ -36,9 +36,30 @@
   font-size: 18px;
   text-align: center;
   display: inline-block;
-  background: url(./img/tel.png) no-repeat left center / 45px 45px;
-  padding: 0 0 10px 55px;
+  padding: 0 0 10px 60px;
   height: 45px;
+  position: relative;
+}
+
+.header-tel__icon
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #0077C1;
+  overflow: hidden;
+}
+
+.header-tel__icon .icon-phone
+{
+  font-size: 30px;
+  color: #0077C1;
 }
 
 .header-tel__desc
@@ -81,11 +102,6 @@
 
 @media only screen and (min-resolution: 144dpi)
 {
-  .header-tel
-  {
-    background-image: url(./img/tel@2x.png);
-  }
-
   .header-order:before
   {
     background-image: url(./img/doc@2x.png);

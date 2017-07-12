@@ -47,20 +47,17 @@ a.menu__link
 
 .menu__item_container > .menu__link:before
 {
-  content: "";
   display: none;
-  width: 0.625rem;
-  height: 1rem;
-  background-size: 0.625rem auto;
-  background-repeat: no-repeat;
-  background-image: url(./img/menu-arrow.png);
   position: absolute;
+  content: "\e803";
+  font-family: "fontello";
+  font-size: 18px;
+  line-height: 1;
+  color: rgba(0, 0, 0, .5);
   opacity: 0.6;
-  right: 0.8rem;
+  right: 0.7rem;
   top: 50%;
-  margin-top: -0.3125rem;
-  transform: rotate(90deg);
-
+  margin-top: -7px;
   transition: top 0.3s, right 0.3s;
 }
 
@@ -71,8 +68,8 @@ a.menu__link
 
 .menu__inner > .menu__item_container > .menu__link:before
 {
-  margin-top: -0.5rem;
-  transform: rotate(0deg);
+  margin-top: -0.6rem;
+  content: "\e804";
 }
 
 .menu__inner > .menu__item_container:hover > .menu__link:before
