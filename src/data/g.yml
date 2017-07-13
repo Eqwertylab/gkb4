@@ -1,3 +1,5 @@
 r: ../src/
 c: ../src/chunks/
 b: ../bower_components/
+nm: ../node_modules/
+
