@@ -68,45 +68,8 @@
   color: #5c5c5c;
 }
 
-.header-order
-{
-  font-size: 1rem;
-  padding: 6px 136px 6px 16px;
-  cursor: pointer;
-  color: #fff;
-  border: 1px solid transparent;
-  background: #007cdc;
-  outline: none;
-  box-shadow: -2px 2px 3px rgba(0,0,0,0.25);
-  position: relative;
-  margin-top: 50px;
-  height: auto;
-}
-
-.header-order:before
-{
-  content: "";
-  display: block;
-  position: absolute;
-  width: 110px;
-  height: 103px;
-  background: url(./img/doc.png) no-repeat 0 0 / 110px 103px;
-  bottom: 0;
-  right: 10px;
-}
-
-.header-order:hover
-{
-  background: #006cc0;
-}
-
 @media only screen and (min-resolution: 144dpi)
 {
-  .header-order:before
-  {
-    background-image: url(./img/doc@2x.png);
-  }
-
   .header-logo
   {
     background-image: url(./img/logo@2x.png);
