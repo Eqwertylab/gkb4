@@ -9,7 +9,7 @@
   * Handlers
   */
 
-  $('.contab__link').click(changeTab);
+  $('.contab__link, .menu__link, .mmenu__link').click(changeTab);
 
   /*
   * Functions
@@ -17,12 +17,12 @@
 
   function init()
   {
-    var tab = '#tab-one',
+    var tab = 'tab-one',
         hash = getHash();
 
     if(hash.tab && $('#' + hash.tab).length)
     {
-      tab = '#' + hash.tab;
+      tab = hash.tab;
     }
 
     setTab(tab);
@@ -31,15 +31,20 @@
   function changeTab(event)
   {
     event.preventDefault();
-    var tab = $(this).attr('href');
+    event.stopPropagation();
+
+    var beginSlice = $(this).attr('href').indexOf('#');
+    var hash = getHash($(this).attr('href').slice(beginSlice));
+    var tab = hash.tab;
+
     setTab(tab);
-    setHash('tab', tab.substring(1));
+    setHash('tab', tab);
   }
 
   function setTab(tab)
   {
-    var $link = $('.contab__link[href="' + tab + '"]'),
-        $content = $(tab);
+    var $link = $('.contab__link[href="#tab=' + tab + '"]'),
+        $content = $('#' + tab);
 
     if($link.hasClass('contab__link_active')) return;
 
@@ -85,10 +90,10 @@
     return map;
   }
 
-  function getHash()
+  function getHash(from)
   {
     var hash = {},
-        params = location.hash ? location.hash.substring(1).split('&') : [];
+        params = from ? from.substring(1).split('&') : location.hash ? location.hash.substring(1).split('&') : [];
 
     params.forEach(function(el)
     {
