@@ -1,3 +1,15 @@
+@import "./nav-boomer.css";
+
+.nav
+{
+  background-color: #eadbbb;
+  border-bottom: 1px solid #c7b796;
+  border-top: 1px solid #c7b796;
+  box-shadow: 0px 4px 5px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 200;
+}
+
 .nav > .container:before,
 .nav > .container:after
 {

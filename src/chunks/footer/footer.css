@@ -47,6 +47,7 @@
   font-weight: 300;
   color: rgba(255,255,255,.7);
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .footer-menu-item__menu

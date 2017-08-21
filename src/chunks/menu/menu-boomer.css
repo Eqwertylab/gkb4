@@ -1,0 +1,20 @@
+.page_boomer .menu
+{
+  background-color: #bbdbea;
+}
+
+.page_boomer .menu__link
+{
+  background-color: #bbdbea;
+}
+
+.page_boomer .menu__item:hover > .menu__link
+{
+  background-color: #a1ceee;
+}
+
+.page_boomer .menu__item_active > .menu__link,
+.page_boomer .menu__item_active:hover > .menu__link
+{
+  background-color: #76b8f0;
+}
