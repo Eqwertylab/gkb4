@@ -1,0 +1,18 @@
+/*
+* Запись на прием
+*/
+
+.specview .order-link
+{
+  padding: 15px 20px;
+}
+
+.specview .order-link:before
+{
+  display: none;
+}
+
+.specview .order-link br
+{
+  display: none;
+}
