@@ -1,0 +1,22 @@
+.review__item
+{
+  margin: 0 -1.25rem;
+  padding: 1.25rem;
+}
+
+.review__item:not(:first-child)
+{
+  border-top: 1px solid #d4dee6;
+}
+
+.review__date
+{
+  font-size: .875rem;
+  color: #8a8a8a;
+  text-align: right;
+}
+
+.review__name
+{
+  margin-top: 0;
+}
