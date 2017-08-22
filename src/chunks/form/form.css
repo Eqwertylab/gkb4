@@ -45,7 +45,7 @@ textarea.form__control_error
 .form_gorizontal .form__error
 {
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
 }
 
 .form__error
@@ -56,6 +56,13 @@ textarea.form__control_error
 .form__row
 {
   margin-bottom: 1rem;
+}
+
+.form__success
+{
+  padding: .9375rem;
+  border: 2px solid #96da96;
+  background: #dcfbdc;
 }
 
 @media (min-width: 768px)
@@ -71,3 +78,4 @@ textarea.form__control_error
     line-height: 2.8125rem;
   }
 }
+
