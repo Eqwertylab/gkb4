@@ -1,16 +1,5 @@
 @media (min-width: 768px)
 {
-
-  /*
-   * Общие
-   */
-
-  .main__content,
-  .main__sidebar
-  {
-    padding: 0 15px;
-  }
-
   /*
    * Модальное окно
    */
@@ -34,19 +23,5 @@
   .modal.__video .modal_inner
   {
     padding: 15px;
-  }
-
-  /*
-   * Основной контент
-   */
-
-  .main__content
-  {
-    float: right;
-  }
-
-  .main__sidebar
-  {
-    float: left;
   }
 }

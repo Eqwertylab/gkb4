@@ -70,12 +70,6 @@ a
   -webkit-overflow-scrolling: touch;
 }
 
-.main__content,
-.main__sidebar
-{
-  padding: 0 5px;
-}
-
 .open .mlayout__wrapper
 {
   left: 260px;
@@ -128,18 +122,6 @@ a
 .open .mlayout__curtain
 {
   display: block;
-}
-
-/*
- * Основной контент
- */
-
-.main
-{
-  position: relative;
-  z-index: 100;
-  padding-bottom: 2rem;
-  background: #f4f4f4;
 }
 
 /*
