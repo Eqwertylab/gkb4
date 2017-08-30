@@ -1,0 +1,38 @@
+.important
+{
+  border: 2px solid #c1c1c1;
+  background: #cfcfcf;
+  padding: 20px;
+  margin: 2rem 0;
+}
+
+.important_primary
+{
+  border-color: #337ab7;
+  background-color: #337ab7;
+  color: #fff;
+}
+
+.important_success
+{
+  border-color: #d6e9c6;
+  background-color: #dff0d8;
+}
+
+.important_info
+{
+  border-color: #bce8f1;
+  background-color: #d9edf7;
+}
+
+.important_warning
+{
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+.important_danger
+{
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
