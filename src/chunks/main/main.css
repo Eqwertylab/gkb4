@@ -12,10 +12,6 @@
   padding: 0 5px;
 }
 
-.main__content li {
-  margin: 0.6rem 0;
-}
-
 @media (min-width: 768px)
 {
   .main__content,

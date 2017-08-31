@@ -16,6 +16,7 @@
 {
   float: left;
   position: relative;
+  margin: 0;
 }
 
 .menu__link

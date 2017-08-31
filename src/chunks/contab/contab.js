@@ -20,7 +20,7 @@
     var tab = 'tab-one',
         hash = getHash();
 
-    if(hash.tab && $('#' + hash.tab).length)
+    if($('#' + hash.tab).length)
     {
       tab = hash.tab;
     }
@@ -30,12 +30,22 @@
 
   function changeTab(event)
   {
-    event.preventDefault();
-    event.stopPropagation();
-
     var beginSlice = $(this).attr('href').indexOf('#');
     var hash = getHash($(this).attr('href').slice(beginSlice));
     var tab = hash.tab;
+
+    console.log(tab);
+
+    if(tab)
+    {
+      console.log('stop');
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    else
+    {
+      return;
+    }
 
     setTab(tab);
     setHash('tab', tab);
