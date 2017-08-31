@@ -74,6 +74,11 @@
   text-decoration: none;
 }
 
+.footer-menu-item__warning a
+{
+  color: #ff6f6f;
+}
+
 .footer-menu-item__menu a:hover
 {
   text-decoration: underline;

@@ -28,13 +28,20 @@
 
 .panel__logo
 {
-  display: block;
+  display: flex;
   height: 100%;
   width: 31.4868804664723%;
   float:left;
   background-color: #EFF3F9;
   background-repeat: no-repeat;
   background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel__logo i
+{
+  font-size: 3.5rem;
 }
 
 .panel__text
@@ -62,6 +69,11 @@
 .panel__item_color_red .panel__inner:hover
 {
   border-color: #db0000;
+}
+
+.panel__item_color_red i
+{
+  color: #db0000;
 }
 
 @media (min-width: 768px)
