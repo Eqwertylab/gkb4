@@ -1,13 +1,28 @@
 .specview-panel
 {
-  background: #f2f2f2;
   display: none;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 20px;
+  padding: 0px;
+  z-index: 300;
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #d4dee6;
+  border-left: 0;
+}
+
+.specview .specview-panel
+{
+  top: 0;
+  right: 0;
   padding: 5px 15px;
   align-items: center;
+  border: none;
   border-bottom: 1px solid #f2f2f2;
 }
 
-.specview-panel__item
+.specview .specview-panel__item
 {
   padding: 0 15px;
 }
@@ -32,6 +47,16 @@
 {
   text-decoration: none;
   color: #000;
+  font-size: 28px;
+  padding: 10px 13px;
+  display: inline-block;
+}
+
+.specview .specview-panel-toggle__item
+{
+  font-size: 1.125rem;
+  display: inline;
+  padding: 0;
 }
 
 .specview-panel-toggle__item[data-view="default"]
