@@ -20,6 +20,7 @@ a.mmenu__link
 .mmenu__item
 {
   border-top: 1px solid #c7b796;
+  margin: 0;
 }
 
 .mmenu__item_container > .mmenu__link:after

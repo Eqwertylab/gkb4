@@ -22,6 +22,7 @@
     "gulp": "^3.9.1",
     "gulp-fontello": "^0.4.6",
     "panini": "^1.4.0",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "sticky-sidebar": "^2.0.1"
   }
 }

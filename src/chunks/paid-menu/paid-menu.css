@@ -1,0 +1,27 @@
+.paid-menu
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.paid-menu > li > a
+{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.paid-menu > li:first-child
+{
+  margin-top: 0;
+}
+
+.paid-menu > li:last-child
+{
+  margin-bottom: 0;
+}
+
+.paid-menu > li > ul
+{
+  padding-left: 1.25rem;
+}

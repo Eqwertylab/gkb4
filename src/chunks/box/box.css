@@ -8,6 +8,11 @@
   background: #ffffff;
 }
 
+.box:first-child
+{
+  margin-top: 0;
+}
+
 .box__row
 {
   margin: 0 -1.25rem;

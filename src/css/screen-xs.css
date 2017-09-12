@@ -55,6 +55,10 @@ button, input, select
 a
 {
   color: #0071c8;
+  /*
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+  */
 }
 
 li
