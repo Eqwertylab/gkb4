@@ -3,7 +3,8 @@
 .box
 {
   border: 1px solid #d4dee6;
-  box-shadow: -4px 4px 5px rgba(0,0,0,0.1);
+  /* box-shadow: -4px 4px 5px rgba(0,0,0,0.1); */
+  box-shadow: -2px 2px 8px rgba(0,0,0,0.05);
   margin-top: 2rem;
   background: #ffffff;
 }

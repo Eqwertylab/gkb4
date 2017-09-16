@@ -1,0 +1,62 @@
+.paid-thumb
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.paid-thumb > li:first-child
+{
+  margin-top: 0;
+}
+
+.paid-thumb > li:not(:last-child)
+{
+  margin-bottom: 1rem;
+}
+
+.paid-thumb > li > a
+{
+  display: block;
+  padding: 1.5rem;
+  background: rgba(0, 113, 200, .03);
+  border: 1px solid rgba(0, 113, 200, .09);
+  transition: background .4s;
+}
+
+.paid-thumb > li > a:hover
+{
+  background: rgba(0, 113, 200, .06);
+}
+
+@media (min-width: 1200px)
+{
+  .paid-thumb
+  {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -.5rem;
+  }
+
+  .paid-thumb > li
+  {
+    width: 50%;
+    padding: 0 .5rem;
+  }
+
+  .paid-thumb > li:nth-last-child(2),
+  .paid-thumb > li:last-child
+  {
+    margin-bottom: 0;
+  }
+
+  .paid-thumb > li:nth-child(2)
+  {
+    margin-top: 0;
+  }
+
+  .paid-thumb > li > a
+  {
+    height: 100%;
+  }
+}

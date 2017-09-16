@@ -5,9 +5,43 @@
   list-style-type: none;
 }
 
+.paid-menu a
+{
+  text-decoration: none;
+}
+
+.paid-menu ul
+{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .4s;
+}
+
+.paid-menu .active ul
+{
+  max-height: 1000px;
+}
+
+.paid-menu__fold
+{
+  margin-left: 5px;
+  padding: 5px 5px;
+  background: rgba(0, 113, 200, .05);
+  border-radius: 3px;
+  color: #5c89c1;
+  cursor: pointer;
+  transition: background .3s;
+  /* border: 1px solid rgba(0, 113, 200, .09); */
+}
+
+.paid-menu__fold:hover
+{
+  background: rgba(0, 113, 200, .1);
+}
+
 .paid-menu > li > a
 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.1em;
 }
 
