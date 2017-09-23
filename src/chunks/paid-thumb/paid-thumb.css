@@ -21,6 +21,8 @@
   padding: 1.5rem;
   background: rgba(0, 113, 200, .03);
   transition: background .4s;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .paid-thumb__inner:hover > .paid-thumb__link
@@ -45,6 +47,13 @@
   background-size: cover;
   background-position: center center;
   display: block;
+  opacity: .75;
+  transition: opacity .4s;
+}
+
+.paid-thumb__inner:hover > .paid-thumb__img
+{
+  opacity: 1;
 }
 
 @media (min-width: 1200px)
