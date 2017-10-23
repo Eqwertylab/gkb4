@@ -1,0 +1,61 @@
+.dir-spec
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem -.5rem 0;
+}
+
+.dir-spec__item
+{
+  width: 50%;
+  padding: 0 .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dir-spec__link
+{
+  display: block;
+  transition: filter .2s;
+}
+
+.dir-spec__link:hover
+{
+  filter: brightness(.85);
+}
+
+.dir-spec__title
+{
+  display: block;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+.dir-spec__img
+{
+  width: 150px;
+  height: 180px;
+  text-align: center;
+  background: #f1f1f1;
+  font-size: 14px;
+}
+
+.dir-spec__img[src=""]
+{
+  padding-top: 83px;
+}
+
+@media (min-width: 768px)
+{
+  .dir-spec__item
+  {
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .dir-spec__item
+  {
+    width: 25%;
+  }
+}
